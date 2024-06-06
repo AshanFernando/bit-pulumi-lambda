@@ -55,13 +55,17 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
+        "@aws-sdk/client-dynamodb": "^3.590.0",
+        "@aws-sdk/lib-dynamodb": "^3.590.0",
         "@bitpulumi/awsx.lambda": "^0.0.8",
         "@bitpulumi/development.app-types.pulumi": "^0.0.8",
         "@bitpulumi/development.envs.lambda-env": "^0.0.9",
+        "@pulumi/aws": "^5.41.0",
         "@pulumi/aws-apigateway": "^1.0.1",
         "@pulumi/pulumi": "^3.116.1",
         "@types/aws-lambda": "^8.10.138",
         "aws-lambda": "^1.0.7",
+        "aws-sdk": "^2.1635.0",
         "date-fns": "^3.6.0"
       },
       "peerDependencies": {}

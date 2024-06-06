@@ -1,9 +1,23 @@
 import * as apigateway from "@pulumi/aws-apigateway";
-import bitpulumi from "@bitpulumi/awsx.lambda";
+import bitpulumi from "@bit-pulumi-lambda/demo.awsx.lambda";
+import { countTable } from "@bit-pulumi-lambda/demo.dynamodb.count-table";
 
 export function apiRoutes(endpointName: string) {
   const api = new apigateway.RestAPI(endpointName, {
     routes: [
+      {
+        path: "/api/count",
+        method: "GET",
+        eventHandler: new bitpulumi.awsx.Lambda(
+          "count-lambda",
+          require.resolve("@bit-pulumi-lambda/demo.lambdas.count-lambda"),
+          {
+            environment: {
+              variables: { COUNT_TABLE: countTable.name }, // Optional environment variables
+            },
+          }
+        ),
+      },
       {
         path: "/api/date",
         method: "GET",
@@ -42,7 +56,7 @@ export function apiRoutes(endpointName: string) {
         ),
       },
       {
-        path: "/api/success",
+        path: "/api",
         method: "GET",
         eventHandler: new bitpulumi.awsx.Lambda(
           "success-lambda",

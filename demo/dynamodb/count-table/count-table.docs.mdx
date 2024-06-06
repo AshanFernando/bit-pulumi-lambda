@@ -1,13 +1,13 @@
 ---
 labels: ['pulumi']
-description: 'AWS API Gatway Component'
+description: 'A s3 web hosting bucket pulumi component'
 ---
 
 /**
- * Function to create a API Gateway
+ * Function to create a DynamoDB Table
  *
  * @param apiName - The name to assign to the newly created API Gateway.
  * 
  * @returns The create API Gateway instance.
  */
-function apiRoutes(apiName: string): apigateway.RestAPI
+function countTable(tableName: string): aws.dynamodb.Table

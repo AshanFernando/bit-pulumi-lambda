@@ -12,9 +12,30 @@
     "api-gateway": {
         "name": "api-gateway",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "demo/api-gateway"
+    },
+    "awsx/lambda": {
+        "name": "awsx/lambda",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "demo/awsx/lambda"
+    },
+    "dynamodb/count-table": {
+        "name": "dynamodb/count-table",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "demo/dynamodb/count-table"
+    },
+    "lambdas/count-lambda": {
+        "name": "lambdas/count-lambda",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "demo/lambdas/count-lambda"
     },
     "lambdas/date-lambda": {
         "name": "lambdas/date-lambda",
@@ -47,14 +68,14 @@
     "lambdas/success-lambda": {
         "name": "lambdas/success-lambda",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "demo/lambdas/success-lambda"
     },
     "pulumi-app": {
         "name": "pulumi-app",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "demo/pulumi-app"
     },
