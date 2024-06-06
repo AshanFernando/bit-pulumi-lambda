@@ -1,0 +1,10 @@
+{
+  "entryPoints": ["index.ts"],
+  "bundle": true,
+  "platform": "node",
+  "target": "node14", 
+  "external": ["aws-sdk"], 
+  "outfile": "../dist/index.js",
+  "minify": true,
+  "sourcemap": false
+}

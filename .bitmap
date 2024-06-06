@@ -12,14 +12,14 @@
     "api-gateway": {
         "name": "api-gateway",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.4",
+        "version": "0.0.9",
         "mainFile": "index.ts",
         "rootDir": "demo/api-gateway"
     },
     "awsx/lambda": {
         "name": "awsx/lambda",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "demo/awsx/lambda"
     },
@@ -30,10 +30,17 @@
         "mainFile": "index.ts",
         "rootDir": "demo/dynamodb/count-table"
     },
+    "envs/lambda-env": {
+        "name": "envs/lambda-env",
+        "scope": "bitpulumi.development",
+        "version": "0.0.10",
+        "mainFile": "index.ts",
+        "rootDir": "development/envs/lambda-env"
+    },
     "lambdas/count-lambda": {
         "name": "lambdas/count-lambda",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.1",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "demo/lambdas/count-lambda"
     },
@@ -75,7 +82,7 @@
     "pulumi-app": {
         "name": "pulumi-app",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.4",
+        "version": "0.0.9",
         "mainFile": "index.ts",
         "rootDir": "demo/pulumi-app"
     },

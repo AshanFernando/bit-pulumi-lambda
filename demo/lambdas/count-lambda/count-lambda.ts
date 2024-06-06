@@ -1,19 +1,24 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
-import { DynamoDBDocumentClient, GetCommand, PutCommand } from '@aws-sdk/lib-dynamodb';
+import {
+  DynamoDBDocumentClient,
+  GetCommand,
+  PutCommand,
+} from '@aws-sdk/lib-dynamodb';
 
 const client = new DynamoDBClient({});
 const ddbDocClient = DynamoDBDocumentClient.from(client);
 
 export const handler: APIGatewayProxyHandler = async (event) => {
   const countTable = process.env.COUNT_TABLE;
-
   const userIp = event.requestContext.identity.sourceIp;
 
   if (!countTable) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: 'COUNT_TABLE environment variable is not set' }),
+      body: JSON.stringify({
+        message: 'COUNT_TABLE environment variable is not set',
+      }),
     };
   }
 
@@ -24,32 +29,27 @@ export const handler: APIGatewayProxyHandler = async (event) => {
     };
   }
 
-  try {
-    // Get the current count for the user IP
-    const getResult = await ddbDocClient.send(new GetCommand({
+  // Get the current count for the user IP
+  const getResult = await ddbDocClient.send(
+    new GetCommand({
       TableName: countTable,
-      Key: { sessionId: userIp }
-    }));
+      Key: { sessionId: userIp },
+    })
+  );
 
-    let count = getResult.Item ? getResult.Item.count : 0;
-    count += 1;
+  let count = getResult.Item ? getResult.Item.count : 0;
+  count += 1;
 
-    // Update the count in the DynamoDB table
-    await ddbDocClient.send(new PutCommand({
+  // Update the count in the DynamoDB table
+  await ddbDocClient.send(
+    new PutCommand({
       TableName: countTable,
-      Item: { sessionId: userIp, count }
-    }));
+      Item: { sessionId: userIp, count },
+    })
+  );
 
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ count }),
-    };
-  } catch (error) {
-    console.error('Error updating count:', error);
-
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ message: 'Internal Server Error' }),
-    };
-  }
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ count }),
+  };
 };
