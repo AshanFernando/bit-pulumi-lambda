@@ -1,2 +1,1 @@
-export { DateLambda } from './date-lambda';
-export type { DateLambdaProps } from './date-lambda';
+export { handler } from './date-lambda';

@@ -1,9 +1,8 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
-import { format } from 'date-fns';
+import { dateUtil } from '@bit-pulumi-lambda/demo.utils.date-util'
 
 export const handler: APIGatewayProxyHandler = async () => {
-  const dateType = process.env.DATE_TYPE;
-  const message = `Hey!, ${dateType} is ${format(new Date(), "yyyy-MM-dd")}`;
+  const message = `Hey!, today is ${dateUtil('today')}`;
 
   return {
     statusCode: 200,

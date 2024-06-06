@@ -1,10 +1,11 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 
-    export const handler: APIGatewayProxyHandler = async () => {
-      const message = "success!";
-    
-      return {
-        statusCode: 200,
-        body: JSON.stringify({ message }),
-      };
-    };    
+import { randomUtil } from '@bit-pulumi-lambda/demo.utils.random-util';
+export const handler: APIGatewayProxyHandler = async () => {
+  const message = randomUtil();
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message }),
+  };
+};

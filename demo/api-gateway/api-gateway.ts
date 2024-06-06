@@ -9,7 +9,12 @@ export function apiRoutes(endpointName: string) {
         method: "GET",
         eventHandler: new bitpulumi.awsx.Lambda(
           "date-lambda",
-          require.resolve("@bit-pulumi-lambda/demo.lambdas.date-lambda")
+          require.resolve("@bit-pulumi-lambda/demo.lambdas.date-lambda"),
+          {
+            environment: {
+              variables: { DATE_TYPE: "today" }, // Optional environment variables
+            },
+          }
         ),
       },
       {
@@ -33,12 +38,7 @@ export function apiRoutes(endpointName: string) {
         method: "GET",
         eventHandler: new bitpulumi.awsx.Lambda(
           "hello-lambda",
-          require.resolve("@bit-pulumi-lambda/demo.lambdas.hello-lambda"),
-          {
-            environment: {
-              variables: { DATE_TYPE: "Today" }, // Optional environment variables
-            },
-          }
+          require.resolve("@bit-pulumi-lambda/demo.lambdas.hello-lambda")
         ),
       },
       {

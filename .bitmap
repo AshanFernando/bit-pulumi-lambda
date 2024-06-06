@@ -167,5 +167,47 @@
             }
         }
     },
+    "utils/date-util": {
+        "name": "utils/date-util",
+        "scope": "",
+        "version": "",
+        "defaultScope": "bit-pulumi-lambda.demo",
+        "mainFile": "index.ts",
+        "rootDir": "demo/utils/date-util",
+        "config": {
+            "teambit.harmony/node": {},
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/node"
+            }
+        }
+    },
+    "utils/db-access": {
+        "name": "utils/db-access",
+        "scope": "",
+        "version": "",
+        "defaultScope": "bit-pulumi-lambda.demo",
+        "mainFile": "index.ts",
+        "rootDir": "demo/utils/db-access",
+        "config": {
+            "teambit.harmony/node": {},
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/node"
+            }
+        }
+    },
+    "utils/random-util": {
+        "name": "utils/random-util",
+        "scope": "",
+        "version": "",
+        "defaultScope": "bit-pulumi-lambda.demo",
+        "mainFile": "index.ts",
+        "rootDir": "demo/utils/random-util",
+        "config": {
+            "teambit.harmony/node": {},
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/node"
+            }
+        }
+    },
     "$schema-version": "17.0.0"
 }

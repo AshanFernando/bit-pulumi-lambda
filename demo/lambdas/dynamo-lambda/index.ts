@@ -1,2 +1,1 @@
-export { DynamoLambda } from './dynamo-lambda';
-export type { DynamoLambdaProps } from './dynamo-lambda';
+export { handler } from './dynamo-lambda';

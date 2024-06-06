@@ -39,7 +39,7 @@
   **/
   "teambit.generator/generator": {
     "envs": [
-      "bitdev.node/node-env",
+      "teambit.harmony/node",
       "bitpulumi.development/envs/lambda-env"
       //  "bitdev.react/react-env",
       //  "bitdev.vue/vue-env",
@@ -56,16 +56,15 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "@bitpulumi/awsdemo.api-gateway": "^0.0.4",
-        "@bitpulumi/awsdemo.lambdas.hello-lambda": "^0.0.4",
         "@bitpulumi/awsx.lambda": "^0.0.8",
-        "@bitpulumi/awsx.web-s3": "^0.0.34",
         "@bitpulumi/development.app-types.pulumi": "^0.0.8",
-        "@bitpulumi/development.envs.lambda-env": "^0.0.8",
+        "@bitpulumi/development.envs.lambda-env": "^0.0.9",
         "@pulumi/aws-apigateway": "^1.0.1",
         "@pulumi/pulumi": "^3.116.1",
+        "@types/aws-lambda": "^8.10.138",
         "aws-lambda": "^1.0.7",
-        "date-fns": "^3.6.0"
+        "date-fns": "^3.6.0",
+        "uuid": "^9.0.1"
       },
       "peerDependencies": {}
     },
