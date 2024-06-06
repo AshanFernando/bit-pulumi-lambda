@@ -44,9 +44,6 @@ importers:
       react-dom:
         specifier: ^18.0.0
         version: 18.3.1(react@18.3.1)
-      uuid:
-        specifier: ^9.0.1
-        version: 9.0.1
     devDependencies:
       '@babel/runtime':
         specifier: 7.20.0
@@ -57,6 +54,9 @@ importers:
       '@types/node':
         specifier: '>=16.18.11 <17.0.0'
         version: 16.18.98
+      uuid:
+        specifier: 9.0.1
+        version: 9.0.1
 
   demo/api-gateway:
     dependencies:
@@ -110,37 +110,6 @@ importers:
       date-fns:
         specifier: ^3.6.0
         version: 3.6.0
-
-  demo/lambdas/dynamo-lambda:
-    dependencies:
-      '@mdx-js/react':
-        specifier: 1.6.22
-        version: 1.6.22(react@18.3.1)
-      '@teambit/mdx.ui.mdx-scope-context':
-        specifier: 0.0.496
-        version: 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      aws-lambda:
-        specifier: ^1.0.7
-        version: 1.0.7
-      react:
-        specifier: ^18.0.0
-        version: 18.3.1
-      react-dom:
-        specifier: ^18.0.0
-        version: 18.3.1(react@18.3.1)
-    devDependencies:
-      '@bitpulumi/development.envs.lambda-env':
-        specifier: ^0.0.9
-        version: 0.0.9(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@16.18.98)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)
-      '@types/aws-lambda':
-        specifier: ^8.10.138
-        version: 8.10.138
-      '@types/jest':
-        specifier: ^29.2.2
-        version: 29.5.12
-      '@types/node':
-        specifier: ^16.18.11
-        version: 16.18.98
 
   demo/lambdas/flights-lambda:
     dependencies:
@@ -237,6 +206,9 @@ importers:
       '@types/node':
         specifier: ^16.18.11
         version: 16.18.98
+      uuid:
+        specifier: 9.0.1
+        version: 9.0.1
 
   demo/lambdas/success-lambda:
     dependencies:
@@ -304,19 +276,11 @@ importers:
         specifier: 12.20.4
         version: 12.20.4
 
-  demo/utils/db-access:
-    devDependencies:
-      '@babel/runtime':
-        specifier: 7.20.0
-        version: 7.20.0
-      '@types/jest':
-        specifier: 26.0.20
-        version: 26.0.20
-      '@types/node':
-        specifier: 12.20.4
-        version: 12.20.4
-
   demo/utils/random-util:
+    dependencies:
+      uuid:
+        specifier: 9.0.1
+        version: 9.0.1
     devDependencies:
       '@babel/runtime':
         specifier: 7.20.0
@@ -336,9 +300,6 @@ importers:
       '@bit-pulumi-lambda/demo.lambdas.date-lambda':
         specifier: workspace:*
         version: file:demo/lambdas/date-lambda
-      '@bit-pulumi-lambda/demo.lambdas.dynamo-lambda':
-        specifier: workspace:*
-        version: file:demo/lambdas/dynamo-lambda
       '@bit-pulumi-lambda/demo.lambdas.flights-lambda':
         specifier: workspace:*
         version: file:demo/lambdas/flights-lambda
@@ -357,9 +318,6 @@ importers:
       '@bit-pulumi-lambda/demo.utils.date-util':
         specifier: workspace:*
         version: file:demo/utils/date-util
-      '@bit-pulumi-lambda/demo.utils.db-access':
-        specifier: workspace:*
-        version: file:demo/utils/db-access
       '@bit-pulumi-lambda/demo.utils.random-util':
         specifier: workspace:*
         version: file:demo/utils/random-util
@@ -384,8 +342,6 @@ importers:
         injected: true
       '@bit-pulumi-lambda/demo.lambdas.date-lambda':
         injected: true
-      '@bit-pulumi-lambda/demo.lambdas.dynamo-lambda':
-        injected: true
       '@bit-pulumi-lambda/demo.lambdas.flights-lambda':
         injected: true
       '@bit-pulumi-lambda/demo.lambdas.hello-lambda':
@@ -398,8 +354,6 @@ importers:
         injected: true
       '@bit-pulumi-lambda/demo.utils.date-util':
         injected: true
-      '@bit-pulumi-lambda/demo.utils.db-access':
-        injected: true
       '@bit-pulumi-lambda/demo.utils.random-util':
         injected: true
 
@@ -411,9 +365,6 @@ importers:
       '@bit-pulumi-lambda/demo.lambdas.date-lambda':
         specifier: workspace:*
         version: file:demo/lambdas/date-lambda
-      '@bit-pulumi-lambda/demo.lambdas.dynamo-lambda':
-        specifier: workspace:*
-        version: file:demo/lambdas/dynamo-lambda
       '@bit-pulumi-lambda/demo.lambdas.flights-lambda':
         specifier: workspace:*
         version: file:demo/lambdas/flights-lambda
@@ -432,9 +383,6 @@ importers:
       '@bit-pulumi-lambda/demo.utils.date-util':
         specifier: workspace:*
         version: file:demo/utils/date-util
-      '@bit-pulumi-lambda/demo.utils.db-access':
-        specifier: workspace:*
-        version: file:demo/utils/db-access
       '@bit-pulumi-lambda/demo.utils.random-util':
         specifier: workspace:*
         version: file:demo/utils/random-util
@@ -458,8 +406,6 @@ importers:
         injected: true
       '@bit-pulumi-lambda/demo.lambdas.date-lambda':
         injected: true
-      '@bit-pulumi-lambda/demo.lambdas.dynamo-lambda':
-        injected: true
       '@bit-pulumi-lambda/demo.lambdas.flights-lambda':
         injected: true
       '@bit-pulumi-lambda/demo.lambdas.hello-lambda':
@@ -472,8 +418,6 @@ importers:
         injected: true
       '@bit-pulumi-lambda/demo.utils.date-util':
         injected: true
-      '@bit-pulumi-lambda/demo.utils.db-access':
-        injected: true
       '@bit-pulumi-lambda/demo.utils.random-util':
         injected: true
 
@@ -485,9 +429,6 @@ importers:
       '@bit-pulumi-lambda/demo.lambdas.date-lambda':
         specifier: workspace:*
         version: file:demo/lambdas/date-lambda
-      '@bit-pulumi-lambda/demo.lambdas.dynamo-lambda':
-        specifier: workspace:*
-        version: file:demo/lambdas/dynamo-lambda
       '@bit-pulumi-lambda/demo.lambdas.flights-lambda':
         specifier: workspace:*
         version: file:demo/lambdas/flights-lambda
@@ -506,9 +447,6 @@ importers:
       '@bit-pulumi-lambda/demo.utils.date-util':
         specifier: workspace:*
         version: file:demo/utils/date-util
-      '@bit-pulumi-lambda/demo.utils.db-access':
-        specifier: workspace:*
-        version: file:demo/utils/db-access
       '@bit-pulumi-lambda/demo.utils.random-util':
         specifier: workspace:*
         version: file:demo/utils/random-util
@@ -516,8 +454,6 @@ importers:
       '@bit-pulumi-lambda/demo.api-gateway':
         injected: true
       '@bit-pulumi-lambda/demo.lambdas.date-lambda':
-        injected: true
-      '@bit-pulumi-lambda/demo.lambdas.dynamo-lambda':
         injected: true
       '@bit-pulumi-lambda/demo.lambdas.flights-lambda':
         injected: true
@@ -530,8 +466,6 @@ importers:
       '@bit-pulumi-lambda/demo.pulumi-app':
         injected: true
       '@bit-pulumi-lambda/demo.utils.date-util':
-        injected: true
-      '@bit-pulumi-lambda/demo.utils.db-access':
         injected: true
       '@bit-pulumi-lambda/demo.utils.random-util':
         injected: true
@@ -1419,9 +1353,6 @@ packages:
   '@bit-pulumi-lambda/demo.lambdas.date-lambda@file:demo/lambdas/date-lambda':
     resolution: {directory: demo/lambdas/date-lambda, type: directory}
 
-  '@bit-pulumi-lambda/demo.lambdas.dynamo-lambda@file:demo/lambdas/dynamo-lambda':
-    resolution: {directory: demo/lambdas/dynamo-lambda, type: directory}
-
   '@bit-pulumi-lambda/demo.lambdas.flights-lambda@file:demo/lambdas/flights-lambda':
     resolution: {directory: demo/lambdas/flights-lambda, type: directory}
 
@@ -1439,9 +1370,6 @@ packages:
 
   '@bit-pulumi-lambda/demo.utils.date-util@file:demo/utils/date-util':
     resolution: {directory: demo/utils/date-util, type: directory}
-
-  '@bit-pulumi-lambda/demo.utils.db-access@file:demo/utils/db-access':
-    resolution: {directory: demo/utils/db-access, type: directory}
 
   '@bit-pulumi-lambda/demo.utils.random-util@file:demo/utils/random-util':
     resolution: {directory: demo/utils/random-util, type: directory}
@@ -11855,7 +11783,6 @@ snapshots:
   '@bit-pulumi-lambda/demo.api-gateway@file:demo/api-gateway(typescript@5.1.3)':
     dependencies:
       '@bit-pulumi-lambda/demo.lambdas.date-lambda': file:demo/lambdas/date-lambda
-      '@bit-pulumi-lambda/demo.lambdas.dynamo-lambda': file:demo/lambdas/dynamo-lambda
       '@bit-pulumi-lambda/demo.lambdas.flights-lambda': file:demo/lambdas/flights-lambda
       '@bit-pulumi-lambda/demo.lambdas.hello-lambda': file:demo/lambdas/hello-lambda
       '@bit-pulumi-lambda/demo.lambdas.random-number-lambda': file:demo/lambdas/random-number-lambda
@@ -11871,14 +11798,6 @@ snapshots:
   '@bit-pulumi-lambda/demo.lambdas.date-lambda@file:demo/lambdas/date-lambda':
     dependencies:
       '@bit-pulumi-lambda/demo.utils.date-util': file:demo/utils/date-util
-      '@mdx-js/react': 1.6.22(react@18.3.1)
-      '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      aws-lambda: 1.0.7
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
-  '@bit-pulumi-lambda/demo.lambdas.dynamo-lambda@file:demo/lambdas/dynamo-lambda':
-    dependencies:
       '@mdx-js/react': 1.6.22(react@18.3.1)
       '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       aws-lambda: 1.0.7
@@ -11904,6 +11823,7 @@ snapshots:
 
   '@bit-pulumi-lambda/demo.lambdas.random-number-lambda@file:demo/lambdas/random-number-lambda':
     dependencies:
+      '@bit-pulumi-lambda/demo.utils.random-util': file:demo/utils/random-util
       '@mdx-js/react': 1.6.22(react@18.3.1)
       '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       aws-lambda: 1.0.7
@@ -11933,9 +11853,9 @@ snapshots:
     dependencies:
       date-fns: 3.6.0
 
-  '@bit-pulumi-lambda/demo.utils.db-access@file:demo/utils/db-access': {}
-
-  '@bit-pulumi-lambda/demo.utils.random-util@file:demo/utils/random-util': {}
+  '@bit-pulumi-lambda/demo.utils.random-util@file:demo/utils/random-util':
+    dependencies:
+      uuid: 9.0.1
 
   '@bitdev/react.webpack.refresh-overlay@0.0.1':
     dependencies:

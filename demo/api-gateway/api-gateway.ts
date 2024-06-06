@@ -18,14 +18,6 @@ export function apiRoutes(endpointName: string) {
         ),
       },
       {
-        path: "/api/dynamo",
-        method: "GET",
-        eventHandler: new bitpulumi.awsx.Lambda(
-          "dynamo-lambda",
-          require.resolve("@bit-pulumi-lambda/demo.lambdas.dynamo-lambda")
-        ),
-      },
-      {
         path: "/api/flights",
         method: "GET",
         eventHandler: new bitpulumi.awsx.Lambda(
@@ -42,7 +34,7 @@ export function apiRoutes(endpointName: string) {
         ),
       },
       {
-        path: "/api/random-number",
+        path: "/api/random",
         method: "GET",
         eventHandler: new bitpulumi.awsx.Lambda(
           "random-number-lambda",

@@ -48,20 +48,6 @@
             }
         }
     },
-    "lambdas/dynamo-lambda": {
-        "name": "lambdas/dynamo-lambda",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
-        "mainFile": "index.ts",
-        "rootDir": "demo/lambdas/dynamo-lambda",
-        "config": {
-            "bitpulumi.development/envs/lambda-env@0.0.8": {},
-            "teambit.envs/envs": {
-                "env": "bitpulumi.development/envs/lambda-env"
-            }
-        }
-    },
     "lambdas/flights-lambda": {
         "name": "lambdas/flights-lambda",
         "scope": "",
@@ -174,20 +160,6 @@
         "defaultScope": "bit-pulumi-lambda.demo",
         "mainFile": "index.ts",
         "rootDir": "demo/utils/date-util",
-        "config": {
-            "teambit.harmony/node": {},
-            "teambit.envs/envs": {
-                "env": "teambit.harmony/node"
-            }
-        }
-    },
-    "utils/db-access": {
-        "name": "utils/db-access",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
-        "mainFile": "index.ts",
-        "rootDir": "demo/utils/db-access",
         "config": {
             "teambit.harmony/node": {},
             "teambit.envs/envs": {
