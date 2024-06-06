@@ -1,13 +1,8 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
-import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
-import {
-  DynamoDBDocumentClient,
-  GetCommand,
-  PutCommand,
-} from '@aws-sdk/lib-dynamodb';
+import AWS from 'aws-sdk';
 
-const client = new DynamoDBClient({});
-const ddbDocClient = DynamoDBDocumentClient.from(client);
+AWS.config.update({ region: 'your-region' }); // Specify your region here
+const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 export const handler: APIGatewayProxyHandler = async (event) => {
   const countTable = process.env.COUNT_TABLE;
@@ -30,23 +25,40 @@ export const handler: APIGatewayProxyHandler = async (event) => {
   }
 
   // Get the current count for the user IP
-  const getResult = await ddbDocClient.send(
-    new GetCommand({
-      TableName: countTable,
-      Key: { sessionId: userIp },
-    })
-  );
+  const getParams = {
+    TableName: countTable,
+    Key: { sessionId: userIp },
+  };
 
-  let count = getResult.Item ? getResult.Item.count : 0;
+  let count = 0;
+  try {
+    const getResult = await dynamoDb.get(getParams).promise();
+    if (getResult.Item) {
+      count = getResult.Item.count;
+    }
+  } catch (error) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ message: 'Error retrieving count', error }),
+    };
+  }
+
   count += 1;
 
   // Update the count in the DynamoDB table
-  await ddbDocClient.send(
-    new PutCommand({
-      TableName: countTable,
-      Item: { sessionId: userIp, count },
-    })
-  );
+  const putParams = {
+    TableName: countTable,
+    Item: { sessionId: userIp, count },
+  };
+
+  try {
+    await dynamoDb.put(putParams).promise();
+  } catch (error) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ message: 'Error updating count', error }),
+    };
+  }
 
   return {
     statusCode: 200,
