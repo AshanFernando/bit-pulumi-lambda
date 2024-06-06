@@ -37,8 +37,8 @@ export function apiRoutes(endpointName: string) {
         path: "/api/random",
         method: "GET",
         eventHandler: new bitpulumi.awsx.Lambda(
-          "random-number-lambda",
-          require.resolve("@bit-pulumi-lambda/demo.lambdas.random-number-lambda")
+          "random-lambda",
+          require.resolve("@bit-pulumi-lambda/demo.lambdas.random-lambda")
         ),
       },
       {

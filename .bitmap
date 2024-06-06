@@ -11,175 +11,66 @@
 {
     "api-gateway": {
         "name": "api-gateway",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.3",
         "mainFile": "index.ts",
-        "rootDir": "demo/api-gateway",
-        "config": {
-            "teambit.envs/envs": {},
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.component/dev-files": {},
-            "teambit.semantics/schema": {},
-            "teambit.preview/preview": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "bitpulumi.awsdemo",
-                    "name": "api-gateway",
-                    "version": "0.0.4"
-                }
-            }
-        }
+        "rootDir": "demo/api-gateway"
     },
     "lambdas/date-lambda": {
         "name": "lambdas/date-lambda",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "demo/lambdas/date-lambda",
-        "config": {
-            "bitpulumi.development/envs/lambda-env@0.0.8": {},
-            "teambit.envs/envs": {
-                "env": "bitpulumi.development/envs/lambda-env"
-            }
-        }
+        "rootDir": "demo/lambdas/date-lambda"
     },
     "lambdas/flights-lambda": {
         "name": "lambdas/flights-lambda",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "demo/lambdas/flights-lambda",
-        "config": {
-            "bitpulumi.development/envs/lambda-env@0.0.8": {},
-            "teambit.envs/envs": {
-                "env": "bitpulumi.development/envs/lambda-env"
-            }
-        }
+        "rootDir": "demo/lambdas/flights-lambda"
     },
     "lambdas/hello-lambda": {
         "name": "lambdas/hello-lambda",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "demo/lambdas/hello-lambda",
-        "config": {
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.component/dev-files": {},
-            "teambit.semantics/schema": {},
-            "teambit.preview/preview": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "bitpulumi.awsdemo",
-                    "name": "lambdas/hello-lambda",
-                    "version": "0.0.4"
-                }
-            },
-            "bitpulumi.development/envs/lambda-env@0.0.8": {},
-            "teambit.envs/envs": {
-                "env": "bitpulumi.development/envs/lambda-env"
-            }
-        }
+        "rootDir": "demo/lambdas/hello-lambda"
     },
-    "lambdas/random-number-lambda": {
-        "name": "lambdas/random-number-lambda",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
+    "lambdas/random-lambda": {
+        "name": "lambdas/random-lambda",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.3",
         "mainFile": "index.ts",
-        "rootDir": "demo/lambdas/random-number-lambda",
-        "config": {
-            "bitpulumi.development/envs/lambda-env@0.0.8": {},
-            "teambit.envs/envs": {
-                "env": "bitpulumi.development/envs/lambda-env"
-            }
-        }
+        "rootDir": "demo/lambdas/random-lambda"
     },
     "lambdas/success-lambda": {
         "name": "lambdas/success-lambda",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "demo/lambdas/success-lambda",
-        "config": {
-            "bitpulumi.development/envs/lambda-env@0.0.8": {},
-            "teambit.envs/envs": {
-                "env": "bitpulumi.development/envs/lambda-env"
-            }
-        }
+        "rootDir": "demo/lambdas/success-lambda"
     },
     "pulumi-app": {
         "name": "pulumi-app",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.3",
         "mainFile": "index.ts",
-        "rootDir": "demo/pulumi-app",
-        "config": {
-            "teambit.dependencies/dependency-resolver": {
-                "policy": {
-                    "dependencies": {
-                        "@bitpulumi/awsdemo.api.api-routes": "-"
-                    }
-                }
-            },
-            "teambit.harmony/node": {},
-            "teambit.envs/envs": {
-                "env": "teambit.harmony/node"
-            },
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.preview/preview": {},
-            "teambit.component/dev-files": {},
-            "teambit.pipelines/builder": {},
-            "teambit.semantics/schema": {},
-            "teambit.harmony/application": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "bitpulumi.apps",
-                    "name": "pulumi-entry",
-                    "version": "0.0.68"
-                }
-            }
-        }
+        "rootDir": "demo/pulumi-app"
     },
     "utils/date-util": {
         "name": "utils/date-util",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "demo/utils/date-util",
-        "config": {
-            "teambit.harmony/node": {},
-            "teambit.envs/envs": {
-                "env": "teambit.harmony/node"
-            }
-        }
+        "rootDir": "demo/utils/date-util"
     },
     "utils/random-util": {
         "name": "utils/random-util",
-        "scope": "",
-        "version": "",
-        "defaultScope": "bit-pulumi-lambda.demo",
+        "scope": "bit-pulumi-lambda.demo",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "demo/utils/random-util",
-        "config": {
-            "teambit.harmony/node": {},
-            "teambit.envs/envs": {
-                "env": "teambit.harmony/node"
-            }
-        }
+        "rootDir": "demo/utils/random-util"
     },
     "$schema-version": "17.0.0"
 }

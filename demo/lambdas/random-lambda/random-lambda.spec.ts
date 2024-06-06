@@ -1,5 +1,5 @@
 import { APIGatewayProxyResult } from 'aws-lambda';
-import { handler } from './random-number-lambda';
+import { handler } from './random-lambda';
 import { version as uuidVersion } from 'uuid';
 
 describe('Lambda Handler', () => {
@@ -17,6 +17,6 @@ describe('Lambda Handler', () => {
 
     // Assertions
     expect(result.statusCode).toBe(200);
-    expect(uuidVersion(body.message)).toBe(4);
+    expect(uuidVersion(body)).toBe(4);
   });
 });
