@@ -1,0 +1,4 @@
+name: pulumi-lambda-demo
+runtime: nodejs
+description: A minimal AWS TypeScript demo to showcase how Lambda can be deployed with Bit
+main: index.ts
