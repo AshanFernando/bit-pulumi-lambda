@@ -14,18 +14,18 @@ importers:
       '@aws-sdk/lib-dynamodb':
         specifier: ^3.590.0
         version: 3.590.0(@aws-sdk/client-dynamodb@3.590.0)
-      '@babel/runtime':
-        specifier: 7.20.0
-        version: 7.20.0
       '@bitpulumi/awsx.lambda':
         specifier: ^0.0.8
         version: 0.0.8
       '@bitpulumi/development.app-types.pulumi':
         specifier: ^0.0.8
         version: 0.0.8
-      '@bitpulumi/development.generators.aws-lambda':
-        specifier: 0.0.5
-        version: 0.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@bitpulumi/development.envs.lambda-env':
+        specifier: ^0.0.19
+        version: 0.0.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
+      '@bitpulumi/development.envs.preview.react-preview':
+        specifier: ^0.0.1
+        version: 0.0.1(@babel/core@7.24.6)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
       '@mdx-js/react':
         specifier: 1.6.22
         version: 1.6.22(react@18.3.1)
@@ -38,27 +38,18 @@ importers:
       '@pulumi/pulumi':
         specifier: ^3.116.1
         version: 3.118.0(typescript@5.1.3)
-      '@teambit/compilation.esbuild-compiler':
-        specifier: 0.0.4
-        version: 0.0.4
       '@teambit/docs.docs-template':
         specifier: ^1.0.7
-        version: 1.0.7(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+        version: 1.0.7(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 0.0.496
         version: 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/node.node':
-        specifier: 0.1.19
-        version: 0.1.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@12.20.4)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@teambit/preview.modules.preview-modules':
         specifier: ^1.0.3
         version: 1.0.3
-      '@teambit/preview.react-preview':
-        specifier: 1.0.29
-        version: 1.0.29(@babel/core@7.24.6)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
       '@teambit/react.mounter':
         specifier: ^1.0.6
-        version: 1.0.6(@types/react@18.3.3)
+        version: 1.0.6
       '@teambit/react.webpack.react-webpack':
         specifier: ^1.0.29
         version: 1.0.29(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
@@ -75,8 +66,8 @@ importers:
         specifier: '>=29.2.2 <30.0.0'
         version: 29.5.12
       '@types/node':
-        specifier: 12.20.4
-        version: 12.20.4
+        specifier: '>=16.18.11 <17.0.0'
+        version: 16.18.98
       '@types/webpack':
         specifier: ^5.28.1
         version: 5.28.5
@@ -86,9 +77,6 @@ importers:
       aws-sdk:
         specifier: ^2.1635.0
         version: 2.1635.0
-      core-js:
-        specifier: ^3.0.0
-        version: 3.37.1
       date-fns:
         specifier: ^3.6.0
         version: 3.6.0
@@ -111,15 +99,9 @@ importers:
         specifier: ^4.15.0
         version: 4.15.0(webpack@5.91.0)
     devDependencies:
-      '@types/react':
-        specifier: '>=18.2.12 <19.0.0'
-        version: 18.3.3
-      '@types/react-dom':
-        specifier: '>=18.2.5 <19.0.0'
-        version: 18.3.0
-      '@types/testing-library__jest-dom':
-        specifier: 5.9.5
-        version: 5.9.5
+      '@babel/runtime':
+        specifier: 7.20.0
+        version: 7.20.0
       uuid:
         specifier: 9.0.1
         version: 9.0.1
@@ -205,6 +187,9 @@ importers:
         specifier: ^18.0.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@bitpulumi/development.envs.lambda-env':
+        specifier: ^0.0.19
+        version: 0.0.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@types/aws-lambda':
         specifier: ^8.10.138
         version: 8.10.138
@@ -233,6 +218,9 @@ importers:
         specifier: ^18.0.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@bitpulumi/development.envs.lambda-env':
+        specifier: ^0.0.19
+        version: 0.0.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@types/aws-lambda':
         specifier: ^8.10.138
         version: 8.10.138
@@ -264,6 +252,9 @@ importers:
         specifier: ^18.0.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@bitpulumi/development.envs.lambda-env':
+        specifier: ^0.0.19
+        version: 0.0.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@types/aws-lambda':
         specifier: ^8.10.138
         version: 8.10.138
@@ -292,6 +283,9 @@ importers:
         specifier: ^18.0.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@bitpulumi/development.envs.lambda-env':
+        specifier: ^0.0.19
+        version: 0.0.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@types/aws-lambda':
         specifier: ^8.10.138
         version: 8.10.138
@@ -323,6 +317,9 @@ importers:
         specifier: ^18.0.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@bitpulumi/development.envs.lambda-env':
+        specifier: ^0.0.19
+        version: 0.0.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@types/aws-lambda':
         specifier: ^8.10.138
         version: 8.10.138
@@ -354,6 +351,9 @@ importers:
         specifier: ^18.0.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@bitpulumi/development.envs.lambda-env':
+        specifier: ^0.0.19
+        version: 0.0.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@types/aws-lambda':
         specifier: ^8.10.138
         version: 8.10.138
@@ -376,55 +376,6 @@ importers:
       '@types/node':
         specifier: 12.20.4
         version: 12.20.4
-
-  demo/react-preview:
-    dependencies:
-      '@teambit/docs.docs-template':
-        specifier: ^1.0.7
-        version: 1.0.7(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/react.mounter':
-        specifier: ^1.0.6
-        version: 1.0.6(@types/react@18.3.3)
-      '@teambit/react.webpack.react-webpack':
-        specifier: ^1.0.29
-        version: 1.0.29(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/webpack.webpack-bundler':
-        specifier: ^1.0.9
-        version: 1.0.9
-      '@teambit/webpack.webpack-dev-server':
-        specifier: ^1.0.10
-        version: 1.0.10(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0)
-      '@types/react':
-        specifier: ^18.2.12
-        version: 18.3.3
-      '@types/react-dom':
-        specifier: ^18.2.5
-        version: 18.3.0
-      object-hash:
-        specifier: ^3.0.0
-        version: 3.0.0
-      react:
-        specifier: ^18.2.0
-        version: 18.3.1
-      webpack:
-        specifier: ^5.88.2
-        version: 5.91.0
-      webpack-dev-server:
-        specifier: ^4.15.0
-        version: 4.15.0(webpack@5.91.0)
-    devDependencies:
-      '@babel/runtime':
-        specifier: 7.20.0
-        version: 7.20.0
-      '@types/jest':
-        specifier: 26.0.20
-        version: 26.0.20
-      '@types/node':
-        specifier: 12.20.4
-        version: 12.20.4
-      '@types/webpack':
-        specifier: ^5.28.1
-        version: 5.28.5
 
   demo/utils/date-util:
     dependencies:
@@ -458,55 +409,6 @@ importers:
         specifier: 12.20.4
         version: 12.20.4
 
-  development/envs/lambda-env:
-    dependencies:
-      '@babel/runtime':
-        specifier: 7.20.0
-        version: 7.20.0
-      '@bitpulumi/development.generators.aws-lambda':
-        specifier: 0.0.5
-        version: 0.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@mdx-js/react':
-        specifier: 1.6.22
-        version: 1.6.22(react@18.3.1)
-      '@teambit/compilation.esbuild-compiler':
-        specifier: 0.0.4
-        version: 0.0.4
-      '@teambit/mdx.ui.mdx-scope-context':
-        specifier: 0.0.496
-        version: 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/node.node':
-        specifier: 0.1.19
-        version: 0.1.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/react@17.0.80)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/preview.react-preview':
-        specifier: 1.0.29
-        version: 1.0.29(@babel/core@7.24.6)(@types/react-dom@17.0.25)(@types/react@17.0.80)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)
-      '@types/jest':
-        specifier: ^29.2.2
-        version: 29.5.12
-      '@types/node':
-        specifier: ^20.11.23
-        version: 20.14.2
-      core-js:
-        specifier: ^3.0.0
-        version: 3.37.1
-      react:
-        specifier: ^18.0.0
-        version: 18.3.1
-      react-dom:
-        specifier: ^18.0.0
-        version: 18.3.1(react@18.3.1)
-    devDependencies:
-      '@types/react':
-        specifier: ^17.0.8
-        version: 17.0.80
-      '@types/react-dom':
-        specifier: ^17.0.5
-        version: 17.0.25
-      '@types/testing-library__jest-dom':
-        specifier: 5.9.5
-        version: 5.9.5
-
   node_modules/.bit_roots/bit-pulumi-lambda.demo_pulumi-app:
     dependencies:
       '@bit-pulumi-lambda/demo.api-gateway':
@@ -539,9 +441,6 @@ importers:
       '@bit-pulumi-lambda/demo.pulumi-app':
         specifier: workspace:*
         version: file:demo/pulumi-app(typescript@5.1.3)
-      '@bit-pulumi-lambda/demo.react-preview':
-        specifier: workspace:*
-        version: file:demo/react-preview(@babel/core@7.24.6)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
       '@bit-pulumi-lambda/demo.utils.date-util':
         specifier: workspace:*
         version: file:demo/utils/date-util
@@ -551,9 +450,6 @@ importers:
       '@bitpulumi/development.app-types.pulumi':
         specifier: ^0.0.8
         version: 0.0.8
-      '@bitpulumi/development.envs.lambda-env':
-        specifier: workspace:*
-        version: file:development/envs/lambda-env(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@pulumi/pulumi':
         specifier: ^3.116.1
         version: 3.118.0(typescript@5.1.3)
@@ -588,16 +484,12 @@ importers:
         injected: true
       '@bit-pulumi-lambda/demo.pulumi-app':
         injected: true
-      '@bit-pulumi-lambda/demo.react-preview':
-        injected: true
       '@bit-pulumi-lambda/demo.utils.date-util':
         injected: true
       '@bit-pulumi-lambda/demo.utils.random-util':
         injected: true
-      '@bitpulumi/development.envs.lambda-env':
-        injected: true
 
-  node_modules/.bit_roots/bitpulumi.development_envs_lambda-env:
+  node_modules/.bit_roots/bitpulumi.development_envs_lambda-env@0.0.19:
     dependencies:
       '@bit-pulumi-lambda/demo.api-gateway':
         specifier: workspace:*
@@ -629,9 +521,6 @@ importers:
       '@bit-pulumi-lambda/demo.pulumi-app':
         specifier: workspace:*
         version: file:demo/pulumi-app(typescript@5.1.3)
-      '@bit-pulumi-lambda/demo.react-preview':
-        specifier: workspace:*
-        version: file:demo/react-preview(@babel/core@7.24.6)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
       '@bit-pulumi-lambda/demo.utils.date-util':
         specifier: workspace:*
         version: file:demo/utils/date-util
@@ -639,8 +528,8 @@ importers:
         specifier: workspace:*
         version: file:demo/utils/random-util
       '@bitpulumi/development.envs.lambda-env':
-        specifier: workspace:*
-        version: file:development/envs/lambda-env(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
+        specifier: 0.0.19
+        version: 0.0.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@mdx-js/react':
         specifier: 1.6.22
         version: 1.6.22(react@18.3.1)
@@ -680,93 +569,9 @@ importers:
         injected: true
       '@bit-pulumi-lambda/demo.pulumi-app':
         injected: true
-      '@bit-pulumi-lambda/demo.react-preview':
-        injected: true
       '@bit-pulumi-lambda/demo.utils.date-util':
         injected: true
       '@bit-pulumi-lambda/demo.utils.random-util':
-        injected: true
-      '@bitpulumi/development.envs.lambda-env':
-        injected: true
-
-  node_modules/.bit_roots/teambit.envs_env:
-    dependencies:
-      '@bit-pulumi-lambda/demo.api-gateway':
-        specifier: workspace:*
-        version: file:demo/api-gateway(typescript@5.1.3)
-      '@bit-pulumi-lambda/demo.awsx.lambda':
-        specifier: workspace:*
-        version: file:demo/awsx/lambda(typescript@5.1.3)
-      '@bit-pulumi-lambda/demo.dynamodb.count-table':
-        specifier: workspace:*
-        version: file:demo/dynamodb/count-table(typescript@5.1.3)
-      '@bit-pulumi-lambda/demo.lambdas.count-lambda':
-        specifier: workspace:*
-        version: file:demo/lambdas/count-lambda
-      '@bit-pulumi-lambda/demo.lambdas.date-lambda':
-        specifier: workspace:*
-        version: file:demo/lambdas/date-lambda
-      '@bit-pulumi-lambda/demo.lambdas.flights-lambda':
-        specifier: workspace:*
-        version: file:demo/lambdas/flights-lambda
-      '@bit-pulumi-lambda/demo.lambdas.hello-lambda':
-        specifier: workspace:*
-        version: file:demo/lambdas/hello-lambda
-      '@bit-pulumi-lambda/demo.lambdas.random-lambda':
-        specifier: workspace:*
-        version: file:demo/lambdas/random-lambda
-      '@bit-pulumi-lambda/demo.lambdas.success-lambda':
-        specifier: workspace:*
-        version: file:demo/lambdas/success-lambda
-      '@bit-pulumi-lambda/demo.pulumi-app':
-        specifier: workspace:*
-        version: file:demo/pulumi-app(typescript@5.1.3)
-      '@bit-pulumi-lambda/demo.react-preview':
-        specifier: workspace:*
-        version: file:demo/react-preview(@babel/core@7.24.6)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(type-fest@0.21.3)(typescript@5.1.3)
-      '@bit-pulumi-lambda/demo.utils.date-util':
-        specifier: workspace:*
-        version: file:demo/utils/date-util
-      '@bit-pulumi-lambda/demo.utils.random-util':
-        specifier: workspace:*
-        version: file:demo/utils/random-util
-      '@bitpulumi/development.envs.lambda-env':
-        specifier: workspace:*
-        version: file:development/envs/lambda-env(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      react:
-        specifier: ^16.8.0 || ^17.0.0
-        version: 17.0.2
-      react-dom:
-        specifier: ^16.8.0 || ^17.0.0
-        version: 17.0.2(react@17.0.2)
-    dependenciesMeta:
-      '@bit-pulumi-lambda/demo.api-gateway':
-        injected: true
-      '@bit-pulumi-lambda/demo.awsx.lambda':
-        injected: true
-      '@bit-pulumi-lambda/demo.dynamodb.count-table':
-        injected: true
-      '@bit-pulumi-lambda/demo.lambdas.count-lambda':
-        injected: true
-      '@bit-pulumi-lambda/demo.lambdas.date-lambda':
-        injected: true
-      '@bit-pulumi-lambda/demo.lambdas.flights-lambda':
-        injected: true
-      '@bit-pulumi-lambda/demo.lambdas.hello-lambda':
-        injected: true
-      '@bit-pulumi-lambda/demo.lambdas.random-lambda':
-        injected: true
-      '@bit-pulumi-lambda/demo.lambdas.success-lambda':
-        injected: true
-      '@bit-pulumi-lambda/demo.pulumi-app':
-        injected: true
-      '@bit-pulumi-lambda/demo.react-preview':
-        injected: true
-      '@bit-pulumi-lambda/demo.utils.date-util':
-        injected: true
-      '@bit-pulumi-lambda/demo.utils.random-util':
-        injected: true
-      '@bitpulumi/development.envs.lambda-env':
         injected: true
 
   node_modules/.bit_roots/teambit.harmony_node:
@@ -801,18 +606,12 @@ importers:
       '@bit-pulumi-lambda/demo.pulumi-app':
         specifier: workspace:*
         version: file:demo/pulumi-app(typescript@5.1.3)
-      '@bit-pulumi-lambda/demo.react-preview':
-        specifier: workspace:*
-        version: file:demo/react-preview(@babel/core@7.24.6)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
       '@bit-pulumi-lambda/demo.utils.date-util':
         specifier: workspace:*
         version: file:demo/utils/date-util
       '@bit-pulumi-lambda/demo.utils.random-util':
         specifier: workspace:*
         version: file:demo/utils/random-util
-      '@bitpulumi/development.envs.lambda-env':
-        specifier: workspace:*
-        version: file:development/envs/lambda-env(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
     dependenciesMeta:
       '@bit-pulumi-lambda/demo.api-gateway':
         injected: true
@@ -834,13 +633,9 @@ importers:
         injected: true
       '@bit-pulumi-lambda/demo.pulumi-app':
         injected: true
-      '@bit-pulumi-lambda/demo.react-preview':
-        injected: true
       '@bit-pulumi-lambda/demo.utils.date-util':
         injected: true
       '@bit-pulumi-lambda/demo.utils.random-util':
-        injected: true
-      '@bitpulumi/development.envs.lambda-env':
         injected: true
 
 packages:
@@ -1890,13 +1685,6 @@ packages:
   '@bit-pulumi-lambda/demo.pulumi-app@file:demo/pulumi-app':
     resolution: {directory: demo/pulumi-app, type: directory}
 
-  '@bit-pulumi-lambda/demo.react-preview@file:demo/react-preview':
-    resolution: {directory: demo/react-preview, type: directory}
-    peerDependencies:
-      '@types/react': ^18.2.12
-      '@types/react-dom': ^18.2.5
-      react: ^18.2.0
-
   '@bit-pulumi-lambda/demo.utils.date-util@file:demo/utils/date-util':
     resolution: {directory: demo/utils/date-util, type: directory}
 
@@ -1912,8 +1700,13 @@ packages:
   '@bitpulumi/development.app-types.pulumi@0.0.8':
     resolution: {integrity: sha512-V4eJ4Ig3eyfEOEThydhGh5GKAvlcy7g4G/WEftg8iyOi6g0mr+r3Dt3gNtdGvtjY9hKoGhvHF+WO/ot7gPrh0Q==}
 
-  '@bitpulumi/development.envs.lambda-env@file:development/envs/lambda-env':
-    resolution: {directory: development/envs/lambda-env, type: directory}
+  '@bitpulumi/development.envs.lambda-env@0.0.19':
+    resolution: {integrity: sha512-a0S4pCvfGzgY8NoCLAVkbGRc+gNGZpoSmxg8Hx6Hti4u5WdRcLlzvUR8L532Vv4grhAWkCQhU0NhrwVfl7cCVw==}
+
+  '@bitpulumi/development.envs.preview.react-preview@0.0.1':
+    resolution: {integrity: sha512-5zfFpO1sO9WByIw5YvyVPVnRlC3fmtA3gF/U+akMtU4HR75pkvUgtU/KkA12uSMTH51rVALZ5tja7WYWpDwDgQ==}
+    peerDependencies:
+      react: ^18.2.0
 
   '@bitpulumi/development.generators.aws-lambda@0.0.5':
     resolution: {integrity: sha512-iba7SEcdUrXVD3zbxb3E6/F5nn1LZOPZ617DfqdGASJPk1dpsWoEOWbm1tijTijmhQQLY0+F5n4CYZKR9551Bg==}
@@ -3264,10 +3057,6 @@ packages:
     resolution: {integrity: sha512-LlhpwcjsMyL/dbuiQWEyN1UvTCHEbIMU9B+4WNnrAXOqrRxCLiHipeJr0+lNNe2/bm7DRWYF37IQlM6pOI5IKg==}
     engines: {node: '>=12.22.0'}
 
-  '@teambit/component-id@1.0.0':
-    resolution: {integrity: sha512-l38dRzCUwnfftH2npJYFbODUJkQ6ZsgNECuy9wNum1vRj+RxqvgybOSeYpiqSzAYCKjUiLKeFErg+r2qv4igNQ==}
-    engines: {node: '>=12.22.0'}
-
   '@teambit/component-id@1.2.0':
     resolution: {integrity: sha512-rdOUec8IfdvPP1jqo/8JpCoLEp8TfTdWdkj5K0oEggSQd1kM9IY2vRoWUguqKAbVVFk7TEnOKGtESOp2mkbglw==}
     engines: {node: '>=12.22.0'}
@@ -3282,10 +3071,6 @@ packages:
 
   '@teambit/component-version@0.0.408':
     resolution: {integrity: sha512-Hq9jjy2aCvsKWzWH1WV8RMExct9J6wBHzoPDG8z8/2QhQVd2mX+oUg8XX3839A9mCgytJF+scAi5neCW2MTP5A==}
-    engines: {node: '>=12.22.0'}
-
-  '@teambit/component-version@1.0.0':
-    resolution: {integrity: sha512-JPwjcflyezcqb+YrGfZP1oAID0oZ/uR8bmLhFLtzIgpwV0TdUeetSZ/dkcPWLddFuBJWw4rqM/4GErBUbDpd+g==}
     engines: {node: '>=12.22.0'}
 
   '@teambit/component-version@1.0.3':
@@ -3397,8 +3182,8 @@ packages:
     resolution: {integrity: sha512-FldFi4JQdFHdXv0ZlJ8eDCCJVac8qwqb5MQ00yQH6VPV8KEpAxPohKuXggx8T4YBN3b7dU4SbehoatXm7qohuA==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
-      react: '*'
-      react-dom: '*'
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
 
   '@teambit/design.themes.base-theme@0.1.0':
     resolution: {integrity: sha1-V2cI94Nm8O1ShJoQwK8wavfYo50=}
@@ -3725,10 +3510,6 @@ packages:
     resolution: {integrity: sha512-eSESv5D7pCnUEqrUQStcqvB1SDpdHffKbMDR0ghq4FwHEt9rqFWkfQV4rbUzzkUz9tKmhIxeRjo8pQif2DXySA==}
     engines: {node: '>=12.22.0'}
 
-  '@teambit/legacy-bit-id@1.0.1':
-    resolution: {integrity: sha512-ehQlC7sTU3L0BWUiXMhy0i+67E8qoN5qy4i7GDE8OshY0k2EpFekDjMXNfonFySNsbHdATAuSzBcCfY0xk4NFA==}
-    engines: {node: '>=12.22.0'}
-
   '@teambit/legacy-bit-id@1.1.0':
     resolution: {integrity: sha512-svFHTgVXh24nK3o1JauMs/z5JFmvduqjEYgX7KupBU7hR5+pbTL9ZYq+tZqUPRoueMaPEsPdjAwmhVYHwZ2nZA==}
     engines: {node: '>=12.22.0'}
@@ -3838,22 +3619,11 @@ packages:
     peerDependencies:
       react: 18.2.0
 
-  '@teambit/preview.react-preview@1.0.29':
-    resolution: {integrity: sha512-IcT/NEIKUTBmpxZmFau94HXdi1jge0xaNUqgj+PU0ak4iL6qgsplt9WA6u2BEL64Ub4WhOUzmv+TgJSZ9cmO4g==}
-    peerDependencies:
-      '@types/react': ^18.2.12
-      '@types/react-dom': ^18.2.5
-      react: 18.2.0
-
   '@teambit/react.apps.react-app-types@0.0.42':
     resolution: {integrity: sha512-801LsgaAPlZSg7yad3fNal5+Aec2lzmuoEzDIowYZmYVrEjpH5dAndQNWcQhEhaiBoA6zuLnkM+7KxLAqHkH4w==}
 
   '@teambit/react.babel.bit-react-transformer@0.0.530':
     resolution: {integrity: sha512-bviWp0PyJLxU8XgbyKFxm+Q32KzA8zd23LXtvgs423vpiN5WHsiSQWd4RXSXQj6xoIasYzWzQ0ZwykDBHTvVfA==}
-    engines: {node: '>=12.22.0'}
-
-  '@teambit/react.babel.bit-react-transformer@1.0.22':
-    resolution: {integrity: sha512-c8YHoFJadwCy3IVWkNZ7wn5cbtkY6EVbhtn8AF/3ICDbqN/nn+7T4DVVz5iOvjOLPdWKpFRh8aYeqJVF+BmMpw==}
     engines: {node: '>=12.22.0'}
 
   '@teambit/react.babel.bit-react-transformer@1.0.23':
@@ -3883,9 +3653,6 @@ packages:
 
   '@teambit/react.mounter@0.0.10':
     resolution: {integrity: sha512-ARdWzf+L8ryu7GzK7SV2kcIug+isV4S1wWaHV2kLBIC+zspAqUzuNHCWJ4fUsy8furDRoAqf4CXej8wGjBBSGQ==}
-
-  '@teambit/react.mounter@1.0.4':
-    resolution: {integrity: sha512-pj6HcxXPqcMtdSR/I2/Ur2FOpNg8b4AxArGRJb7zx0lsxzyFzKxhEuf8RKjsbsUNeFbaxGb+I4C3/c43DLK3kw==}
 
   '@teambit/react.mounter@1.0.6':
     resolution: {integrity: sha512-aMRpvsBm8zHa/SWTzU7RCO6XUpGe59n3pFXbreEyG2w1Ss48noqyzvvLsH4c9y0AWRYPXsWm6h0LZRyNlw8KVw==}
@@ -4037,9 +3804,6 @@ packages:
   '@teambit/react.webpack.react-webpack@1.0.0':
     resolution: {integrity: sha512-UhNxiOc66Fm+Gi5TA8ADfVqqI53BmhoLovGv+315G7LxY6VkeclqBZMcLXDATwD41hDklY9xV9eH3QG3c3flHw==}
 
-  '@teambit/react.webpack.react-webpack@1.0.26':
-    resolution: {integrity: sha512-auXpjsH7rVTF0SxURsuqHYIfmZB9f8NfWLOAoAGPT+nS6ecqjWhDZjSMbcCaIBQIxw3lVx5UMPdrcOEFdy5vGg==}
-
   '@teambit/react.webpack.react-webpack@1.0.29':
     resolution: {integrity: sha512-NxI3iC0sPIVYvsLUfOHBpDWWAKd2ZB9opsbYKpQl/9tO4VhsGZKl20BCJ7a/KZXsgo3XeD9vvy81mRkFMe2zKw==}
 
@@ -4094,20 +3858,12 @@ packages:
     resolution: {integrity: sha1-5/UrCzkUflAvTtIr9rq0sCZyM4g=}
     engines: {node: '>=12.22.0'}
 
-  '@teambit/webpack.modules.generate-style-loaders@1.0.0':
-    resolution: {integrity: sha512-3jggiEov5SXUmfh/XZH8KWeZh9GLZskFpKmdEGH9G0WTUcEIZklNQgr0spfdGS6GALPCgDaNCP0JGIEcC8Sdxg==}
-    engines: {node: '>=12.22.0'}
-
   '@teambit/webpack.modules.generate-style-loaders@1.0.11':
     resolution: {integrity: sha512-+EwAVduVqGBBQqtYvP87p3r4TnBkvU6RjcPmArtAutAm6PpmNz1XB68ZoemwLf9+zZjuVaQe26lpuuA80ZB70Q==}
     engines: {node: '>=12.22.0'}
 
   '@teambit/webpack.modules.style-regexps@0.0.139':
     resolution: {integrity: sha1-imtAG5V7pNn9DG/bocygmAT5DYw=}
-    engines: {node: '>=12.22.0'}
-
-  '@teambit/webpack.modules.style-regexps@1.0.4':
-    resolution: {integrity: sha512-NA0/Yqp11j5PENwXw1gXUPPYFDaamQ1HUcVfkjTXpK/taE908kNmLRtFT7u7mIyUd6Ff7bcKBFOI2olcAQVFGQ==}
     engines: {node: '>=12.22.0'}
 
   '@teambit/webpack.modules.style-regexps@1.0.6':
@@ -4120,9 +3876,6 @@ packages:
   '@teambit/webpack.webpack-bundler@0.0.9':
     resolution: {integrity: sha512-BcSMCCw0amUdUi2KKCBp1KO5gmnCJ7hwFAOdWCNvqoCN284UVEya+8FUdLeSbI69X7FtC/VbEUDIhti2gT+avg==}
 
-  '@teambit/webpack.webpack-bundler@1.0.7':
-    resolution: {integrity: sha512-MthC+qC+1kPSSYine/EKo4ePNywYPAo3or7IgZ8OXNA37iMlwv8O/gQ6kNGTclMPFONE8J5uOGaaIhYPu58W2g==}
-
   '@teambit/webpack.webpack-bundler@1.0.9':
     resolution: {integrity: sha512-h70OKW7ys0tZjIReEKDnsNVqu7RX+xvfYUz4ZlZmGY/LLRrECymyElEoCk3LKjDq34wKAKp1D2O4JdD/VihsaQ==}
 
@@ -4133,11 +3886,6 @@ packages:
 
   '@teambit/webpack.webpack-dev-server@1.0.10':
     resolution: {integrity: sha512-zd77zCjOh5xTIQFgxhHMUfxHcA6ESUJNoB48qFqchUe5icNlxvajSqrJD/auZxjg+zBU0nR/DIv9lI9ALpVk7A==}
-    peerDependencies:
-      webpack: ^5.88.2
-
-  '@teambit/webpack.webpack-dev-server@1.0.8':
-    resolution: {integrity: sha512-s7aqumcC7KcZAlq2gnBlu+AAYw0HnXh6Q4naxJCnO5EWsfG4AlSahSBiPUSqrdyzEY/D4gseGcAbeRqBaTFEqA==}
     peerDependencies:
       webpack: ^5.88.2
 
@@ -4275,6 +4023,9 @@ packages:
   '@types/node@12.20.4':
     resolution: {integrity: sha512-xRCgeE0Q4pT5UZ189TJ3SpYuX/QGl6QIAOAIeDSbAVAd2gX1NxSZup4jNVK7cxIeP8KDSbJgcckun495isP1jQ==}
 
+  '@types/node@16.18.98':
+    resolution: {integrity: sha512-fpiC20NvLpTLAzo3oVBKIqBGR6Fx/8oAK/SSf7G+fydnXMY1x4x9RZ6sBXhqKlCU21g2QapUsbLlhv3+a7wS+Q==}
+
   '@types/node@20.14.2':
     resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
 
@@ -4284,35 +4035,17 @@ packages:
   '@types/parse5@5.0.3':
     resolution: {integrity: sha512-kUNnecmtkunAoQ3CnjmMkzNU/gtxG8guhi+Fk2U/kOpIKjIMKnXGp4IJCgQJrXSgMsWYimYG4TGjz/UzbGEBTw==}
 
-  '@types/prop-types@15.7.12':
-    resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
-
   '@types/qs@6.9.15':
     resolution: {integrity: sha512-uXHQKES6DQKKCLh441Xv/dwxOq1TVS3JPUMlEqoEglvlhR6Mxnlew/Xq/LRVHpLyk7iK3zODe1qYHIMltO7XGg==}
 
   '@types/range-parser@1.2.7':
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
 
-  '@types/react-dom@17.0.25':
-    resolution: {integrity: sha512-urx7A7UxkZQmThYA4So0NelOVjx3V4rNFVJwp0WZlbIK5eM4rNJDiN3R/E9ix0MBh6kAEojk/9YL+Te6D9zHNA==}
-
-  '@types/react-dom@18.3.0':
-    resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
-
-  '@types/react@17.0.80':
-    resolution: {integrity: sha512-LrgHIu2lEtIo8M7d1FcI3BdwXWoRQwMoXOZ7+dPTW0lYREjmlHl3P0U1VD0i/9tppOuv8/sam7sOjx34TxSFbA==}
-
-  '@types/react@18.3.3':
-    resolution: {integrity: sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==}
-
   '@types/responselike@1.0.3':
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
 
   '@types/retry@0.12.0':
     resolution: {integrity: sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==}
-
-  '@types/scheduler@0.16.8':
-    resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==}
 
   '@types/semver@7.5.8':
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
@@ -5514,9 +5247,6 @@ packages:
   cssstyle@4.0.1:
     resolution: {integrity: sha512-8ZYiJ3A/3OkDd093CBT/0UKDWry7ak4BdPTFP2+QEP7cmhouyq/Up709ASSj2cK02BbZiMgk7kYjZNS4QP5qrQ==}
     engines: {node: '>=18'}
-
-  csstype@3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
   d@1.0.2:
     resolution: {integrity: sha512-MOqHvMWF9/9MX6nza0KgvFH4HpMU0EF5uUDXqX/BtxtU8NfB0QzRtJ8Oe/6SuS4kbhyzVJwjd97EA4PKrzJ8bw==}
@@ -8777,11 +8507,6 @@ packages:
       typescript:
         optional: true
 
-  react-dom@17.0.2:
-    resolution: {integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==}
-    peerDependencies:
-      react: 17.0.2
-
   react-dom@18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
@@ -8840,10 +8565,6 @@ packages:
 
   react@0.14.10:
     resolution: {integrity: sha512-yxMw5aorZG4qsLVBfjae4wGFvd5708DhcxaXLJ3IOTgr1TCs8k9+ZheGgLGr5OfwWMhSahNbGvvoEDzrxVWouA==}
-    engines: {node: '>=0.10.0'}
-
-  react@17.0.2:
-    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
     engines: {node: '>=0.10.0'}
 
   react@18.2.0:
@@ -9100,9 +8821,6 @@ packages:
   saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
     engines: {node: '>=v12.22.7'}
-
-  scheduler@0.20.2:
-    resolution: {integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==}
 
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
@@ -13074,96 +12792,6 @@ snapshots:
       - ts-node
       - typescript
 
-  '@bit-pulumi-lambda/demo.react-preview@file:demo/react-preview(@babel/core@7.24.6)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(type-fest@0.21.3)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/docs.docs-template': 1.0.7(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      '@teambit/react.mounter': 1.0.6(@types/react@18.3.3)
-      '@teambit/react.webpack.react-webpack': 1.0.29(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react@17.0.2)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/webpack.webpack-bundler': 1.0.9
-      '@teambit/webpack.webpack-dev-server': 1.0.10(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0)
-      '@types/react': 18.3.3
-      '@types/react-dom': 18.3.0
-      object-hash: 3.0.0
-      react: 17.0.2
-      webpack: 5.91.0
-      webpack-dev-server: 4.15.0(webpack@5.91.0)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@parcel/css'
-      - '@swc/core'
-      - '@swc/css'
-      - '@testing-library/react'
-      - '@types/webpack'
-      - bufferutil
-      - clean-css
-      - csso
-      - debug
-      - encoding
-      - esbuild
-      - eslint
-      - fibers
-      - graphql
-      - less
-      - lightningcss
-      - node-sass
-      - react-dom
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@bit-pulumi-lambda/demo.react-preview@file:demo/react-preview(@babel/core@7.24.6)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/docs.docs-template': 1.0.7(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/react.mounter': 1.0.6(@types/react@18.3.3)
-      '@teambit/react.webpack.react-webpack': 1.0.29(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/webpack.webpack-bundler': 1.0.9
-      '@teambit/webpack.webpack-dev-server': 1.0.10(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0)
-      '@types/react': 18.3.3
-      '@types/react-dom': 18.3.0
-      object-hash: 3.0.0
-      react: 18.3.1
-      webpack: 5.91.0
-      webpack-dev-server: 4.15.0(webpack@5.91.0)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@parcel/css'
-      - '@swc/core'
-      - '@swc/css'
-      - '@testing-library/react'
-      - '@types/webpack'
-      - bufferutil
-      - clean-css
-      - csso
-      - debug
-      - encoding
-      - esbuild
-      - eslint
-      - fibers
-      - graphql
-      - less
-      - lightningcss
-      - node-sass
-      - react-dom
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
   '@bit-pulumi-lambda/demo.utils.date-util@file:demo/utils/date-util':
     dependencies:
       date-fns: 3.6.0
@@ -13189,15 +12817,15 @@ snapshots:
 
   '@bitpulumi/development.app-types.pulumi@0.0.8': {}
 
-  '@bitpulumi/development.envs.lambda-env@file:development/envs/lambda-env(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
+  '@bitpulumi/development.envs.lambda-env@0.0.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
     dependencies:
       '@babel/runtime': 7.20.0
+      '@bitpulumi/development.envs.preview.react-preview': 0.0.1(@babel/core@7.24.6)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
       '@bitpulumi/development.generators.aws-lambda': 0.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mdx-js/react': 1.6.22(react@18.3.1)
       '@teambit/compilation.esbuild-compiler': 0.0.4
       '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/node.node': 0.1.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/preview.react-preview': 1.0.29(@babel/core@7.24.6)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
+      '@teambit/node.node': 0.1.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@types/jest': 29.5.12
       '@types/node': 20.14.2
       core-js: 3.37.1
@@ -13246,6 +12874,51 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
       - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+
+  '@bitpulumi/development.envs.preview.react-preview@0.0.1(@babel/core@7.24.6)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)':
+    dependencies:
+      '@teambit/docs.docs-template': 1.0.7(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/react.mounter': 1.0.6
+      '@teambit/react.webpack.react-webpack': 1.0.29(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
+      '@teambit/webpack.webpack-bundler': 1.0.9
+      '@teambit/webpack.webpack-dev-server': 1.0.10(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0)
+      object-hash: 3.0.0
+      react: 18.3.1
+      webpack: 5.91.0
+      webpack-dev-server: 4.15.0(webpack@5.91.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@parcel/css'
+      - '@swc/core'
+      - '@swc/css'
+      - '@testing-library/react'
+      - '@types/react'
+      - '@types/react-dom'
+      - '@types/webpack'
+      - bufferutil
+      - clean-css
+      - csso
+      - debug
+      - encoding
+      - esbuild
+      - eslint
+      - fibers
+      - graphql
+      - less
+      - lightningcss
+      - node-sass
+      - react-dom
+      - sass-embedded
+      - sockjs-client
+      - supports-color
+      - type-fest
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
       - webpack-hot-middleware
       - webpack-plugin-serve
 
@@ -13425,21 +13098,12 @@ snapshots:
     dependencies:
       '@floating-ui/core': 0.7.3
 
-  '@floating-ui/react-dom@0.7.2(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@floating-ui/react-dom@0.7.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@floating-ui/dom': 0.5.4
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      use-isomorphic-layout-effect: 1.1.2(@types/react@17.0.80)(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-
-  '@floating-ui/react-dom@0.7.2(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@floating-ui/dom': 0.5.4
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      use-isomorphic-layout-effect: 1.1.2(@types/react@18.3.3)(react@18.3.1)
+      use-isomorphic-layout-effect: 1.1.2(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
 
@@ -13714,10 +13378,6 @@ snapshots:
       unist-util-visit: 2.0.3
     transitivePeerDependencies:
       - supports-color
-
-  '@mdx-js/react@1.6.22(react@17.0.2)':
-    dependencies:
-      react: 17.0.2
 
   '@mdx-js/react@1.6.22(react@18.3.1)':
     dependencies:
@@ -14564,7 +14224,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@svgr/plugin-jsx@8.1.0(@svgr/core@8.1.0(typescript@5.1.3))':
+  '@svgr/plugin-jsx@8.1.0(@svgr/core@8.1.0)':
     dependencies:
       '@babel/core': 7.24.6
       '@svgr/babel-preset': 8.1.0(@babel/core@7.24.6)
@@ -14611,7 +14271,7 @@ snapshots:
       '@babel/preset-react': 7.22.15(@babel/core@7.24.6)
       '@babel/preset-typescript': 7.24.6(@babel/core@7.24.6)
       '@svgr/core': 8.1.0(typescript@5.1.3)
-      '@svgr/plugin-jsx': 8.1.0(@svgr/core@8.1.0(typescript@5.1.3))
+      '@svgr/plugin-jsx': 8.1.0(@svgr/core@8.1.0)
       '@svgr/plugin-svgo': 8.1.0(@svgr/core@8.1.0(typescript@5.1.3))(typescript@5.1.3)
     transitivePeerDependencies:
       - supports-color
@@ -14676,56 +14336,21 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@teambit/base-react.navigation.link@2.0.27(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/base-react.navigation.link@2.0.27(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/base-ui.routing.compare-url': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/react': 17.0.80
       classnames: 2.3.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-react.navigation.link@2.0.27(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/base-ui.routing.compare-url': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/react': 18.3.3
-      classnames: 2.3.1
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-react.navigation.link@2.0.31(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/base-react.navigation.link@2.0.31(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/base-ui.routing.compare-url': 1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/react': 17.0.80
       classnames: 2.3.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-react.navigation.link@2.0.31(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.routing.compare-url': 1.0.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@types/react': 18.3.3
-      classnames: 2.3.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  '@teambit/base-react.navigation.link@2.0.31(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/base-ui.routing.compare-url': 1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/react': 18.3.3
-      classnames: 2.3.1
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-react.theme.theme-provider@1.95.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-react.theme.theme-provider@1.95.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -14733,23 +14358,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-react.themes.theme-switcher@1.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-react.themes.theme-switcher@1.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.css-components.elevation@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.css-components.elevation@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -14757,24 +14370,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.css-components.roundness@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.css-components.roundness@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.elements.dots-loader@1.0.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.elements.dots-loader@1.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -14783,27 +14383,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.elements.icon@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.elements.icon@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.input.button@1.0.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.elements.dots-loader': 1.0.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.input.button@1.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -14813,25 +14398,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.input.error@1.0.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.input.error@1.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.layout.breakpoints@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.layout.breakpoints@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -14846,14 +14418,6 @@ snapshots:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.layout.grid-component@1.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.layout.breakpoints': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.layout.grid-component@1.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -14870,13 +14434,6 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       url-parse: 1.5.1
 
-  '@teambit/base-ui.routing.compare-url@1.0.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      url-parse: 1.5.10
-
   '@teambit/base-ui.routing.compare-url@1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
@@ -14890,39 +14447,17 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.styles.flex-center@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.styles.flex-center@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.surfaces.background@1.0.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.surfaces.background@1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.surfaces.card@1.0.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.css-components.elevation': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.css-components.roundness': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.surfaces.background': 1.0.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.surfaces.card@1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -14934,14 +14469,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.surfaces.split-pane.hover-splitter@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.surfaces.split-pane.splitter': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.surfaces.split-pane.hover-splitter@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/base-ui.surfaces.split-pane.splitter': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -14950,25 +14477,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.surfaces.split-pane.layout@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.surfaces.split-pane.layout@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.surfaces.split-pane.pane@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.surfaces.split-pane.layout': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.surfaces.split-pane.pane@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -14977,16 +14490,6 @@ snapshots:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.surfaces.split-pane.split-pane@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.surfaces.split-pane.layout': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.surfaces.split-pane.pane': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.surfaces.split-pane.splitter': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.surfaces.split-pane.split-pane@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -14998,13 +14501,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.surfaces.split-pane.splitter@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.surfaces.split-pane.splitter@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
@@ -15012,26 +14508,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.text.heading@1.0.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.text.heading@1.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.text.paragraph@1.0.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.text.text-sizes': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.theme.sizes': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.text.paragraph@1.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15042,24 +14523,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.text.text-sizes@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.text.text-sizes@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.text.themed-text@1.0.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.text.themed-text@1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15068,25 +14536,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.theme.accent-color@1.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.theme.colors': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.theme.accent-color@1.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/base-ui.theme.colors': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.theme.colors@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.theme.colors@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15100,23 +14555,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/base-ui.theme.sizes@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/base-ui.theme.sizes@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/base-ui.utils.composer@1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/base-ui.utils.composer@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15165,10 +14608,6 @@ snapshots:
     dependencies:
       '@teambit/legacy-bit-id': 0.0.423
 
-  '@teambit/component-id@1.0.0':
-    dependencies:
-      '@teambit/legacy-bit-id': 1.0.1
-
   '@teambit/component-id@1.2.0':
     dependencies:
       '@teambit/component-version': 1.0.3
@@ -15190,11 +14629,6 @@ snapshots:
       '@teambit/bit-error': 0.0.402
       semver: 7.3.4
 
-  '@teambit/component-version@1.0.0':
-    dependencies:
-      '@teambit/bit-error': 0.0.402
-      semver: 7.5.2
-
   '@teambit/component-version@1.0.3':
     dependencies:
       '@teambit/bit-error': 0.0.404
@@ -15215,16 +14649,6 @@ snapshots:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - encoding
-      - graphql
-
-  '@teambit/component.ui.hooks.use-fetch-docs@0.0.21(encoding@0.1.13)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/graphql.hooks.use-query-light': 1.0.0(encoding@0.1.13)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
     transitivePeerDependencies:
       - encoding
       - graphql
@@ -15251,10 +14675,6 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@teambit/compositions.model.composition-type@0.0.499(react@17.0.2)':
-    dependencies:
-      react: 17.0.2
-
   '@teambit/compositions.model.composition-type@0.0.499(react@18.3.1)':
     dependencies:
       react: 18.3.1
@@ -15274,21 +14694,6 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-error-boundary: 3.1.4(react@18.3.1)
 
-  '@teambit/compositions.ui.composition-card@0.0.511(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.surfaces.card': 1.0.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.text.themed-text': 1.0.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.theme.accent-color': 1.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/compositions.model.composition-id': 0.0.498
-      '@teambit/compositions.model.composition-type': 0.0.499(react@17.0.2)
-      '@teambit/evangelist.elements.icon': 1.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/react.ui.error-fallback': 0.0.125(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.2.6
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-error-boundary: 3.1.4(react@17.0.2)
-
   '@teambit/compositions.ui.composition-card@0.0.511(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/base-ui.surfaces.card': 1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15303,14 +14708,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-error-boundary: 3.1.4(react@18.3.1)
-
-  '@teambit/compositions.ui.compositions-overview@0.0.10(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/compositions.model.composition-type': 0.0.499(react@17.0.2)
-      '@teambit/compositions.ui.composition-card': 0.0.511(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/compositions.ui.compositions-overview@0.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15342,37 +14739,6 @@ snapshots:
       typescript: 5.1.3
     transitivePeerDependencies:
       - supports-color
-
-  '@teambit/defender.jest-tester@0.0.12(@babel/traverse@7.24.6)(@types/node@12.20.4)(babel-plugin-macros@3.1.0)':
-    dependencies:
-      '@babel/core': 7.20.2
-      '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.20.2)
-      '@babel/plugin-proposal-decorators': 7.20.2(@babel/core@7.20.2)
-      '@babel/plugin-proposal-object-rest-spread': 7.20.2(@babel/core@7.20.2)
-      '@babel/plugin-transform-modules-commonjs': 7.19.6(@babel/core@7.20.2)
-      '@babel/preset-env': 7.20.2(@babel/core@7.20.2)
-      '@babel/preset-typescript': 7.18.6(@babel/core@7.20.2)
-      '@jest/test-result': 29.3.1
-      '@teambit/defender.tester-task': 0.0.6
-      '@teambit/tests-results': 0.0.104
-      babel-plugin-transform-typescript-metadata: 0.3.2(@babel/core@7.20.2)(@babel/traverse@7.24.6)
-      babel-preset-jest: 29.2.0(@babel/core@7.20.2)
-      camelcase: 7.0.0
-      comlink: 4.3.1
-      flatted: 3.2.7
-      fs-extra: 10.1.0
-      identity-obj-proxy: 3.0.0
-      jest: 29.3.1(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-      jest-message-util: 29.3.1
-      lodash: 4.17.21
-      minimatch: 5.1.0
-    transitivePeerDependencies:
-      - '@babel/traverse'
-      - '@types/node'
-      - babel-plugin-macros
-      - node-notifier
-      - supports-color
-      - ts-node
 
   '@teambit/defender.jest-tester@0.0.12(@babel/traverse@7.24.6)(@types/node@20.14.2)(babel-plugin-macros@3.1.0)':
     dependencies:
@@ -15425,12 +14791,6 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@teambit/design.theme.icons-font@1.0.8(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/design.theme.icons-font@1.0.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
@@ -15443,26 +14803,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/design.theme.icons-font@2.0.29(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/design.theme.icons-font@2.0.29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/design.themes.base-theme@0.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-react.theme.theme-provider': 1.95.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/design.theme.icons-font': 1.0.8(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.3.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/design.themes.base-theme@0.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15473,13 +14818,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/design.themes.dark-theme@1.91.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/design.themes.base-theme': 0.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/design.themes.dark-theme@1.91.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/design.themes.base-theme': 0.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15487,31 +14825,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/design.themes.light-theme@0.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/design.themes.base-theme': 0.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/design.themes.light-theme@0.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/design.themes.base-theme': 0.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/design.themes.theme-toggler@0.1.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-react.themes.theme-switcher': 1.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/design.themes.base-theme': 0.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/design.themes.dark-theme': 1.91.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/design.themes.light-theme': 0.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    transitivePeerDependencies:
-      - '@testing-library/react'
 
   '@teambit/design.themes.theme-toggler@0.1.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15525,9 +14844,9 @@ snapshots:
     transitivePeerDependencies:
       - '@testing-library/react'
 
-  '@teambit/design.ui.error-page@0.0.364(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/design.ui.error-page@0.0.364(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@teambit/base-react.navigation.link': 2.0.27(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/base-react.navigation.link': 2.0.27(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/community.constants.links': 0.0.2
       core-js: 3.37.1
       react: 18.3.1
@@ -15535,26 +14854,6 @@ snapshots:
     transitivePeerDependencies:
       - '@testing-library/react'
       - '@types/react'
-
-  '@teambit/design.ui.error-page@0.0.364(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/base-react.navigation.link': 2.0.27(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/community.constants.links': 0.0.2
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - '@types/react'
-
-  '@teambit/design.ui.icon-button@1.0.16(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.elements.icon': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.input.button': 1.0.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/design.ui.icon-button@1.0.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15565,9 +14864,9 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/design.ui.pages.not-found@0.0.366(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/design.ui.pages.not-found@0.0.366(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@teambit/design.ui.error-page': 0.0.364(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/design.ui.error-page': 0.0.364(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -15575,9 +14874,9 @@ snapshots:
       - '@testing-library/react'
       - '@types/react'
 
-  '@teambit/design.ui.pages.not-found@0.0.366(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/design.ui.pages.server-error@0.0.366(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@teambit/design.ui.error-page': 0.0.364(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/design.ui.error-page': 0.0.364(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -15585,29 +14884,9 @@ snapshots:
       - '@testing-library/react'
       - '@types/react'
 
-  '@teambit/design.ui.pages.server-error@0.0.366(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/docs.docs-template@0.0.12(encoding@0.1.13)(graphql@14.7.0)(typescript@5.1.3)':
     dependencies:
-      '@teambit/design.ui.error-page': 0.0.364(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - '@types/react'
-
-  '@teambit/design.ui.pages.server-error@0.0.366(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/design.ui.error-page': 0.0.364(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - '@types/react'
-
-  '@teambit/docs.docs-template@0.0.12(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/react.ui.docs-app': 0.0.207(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/react.ui.docs-app': 0.0.207(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -15618,24 +14897,9 @@ snapshots:
       - graphql
       - typescript
 
-  '@teambit/docs.docs-template@0.0.12(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(typescript@5.1.3)':
+  '@teambit/docs.docs-template@1.0.7(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
-      '@teambit/react.ui.docs-app': 0.0.207(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - '@types/react'
-      - encoding
-      - graphql
-      - typescript
-
-  '@teambit/docs.docs-template@1.0.7(@types/react-dom@17.0.25)(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/react.ui.docs-app': 1.0.21(@types/react-dom@17.0.25)(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/react': 17.0.80
-      '@types/react-dom': 17.0.25
+      '@teambit/react.ui.docs-app': 1.0.21(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
@@ -15644,33 +14908,7 @@ snapshots:
       - graphql
       - typescript
 
-  '@teambit/docs.docs-template@1.0.7(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/react.ui.docs-app': 1.0.21(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      '@types/react': 18.3.3
-      '@types/react-dom': 18.3.0
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - encoding
-      - graphql
-      - typescript
-
-  '@teambit/docs.docs-template@1.0.7(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/react.ui.docs-app': 1.0.21(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@types/react': 18.3.3
-      '@types/react-dom': 18.3.0
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - encoding
-      - graphql
-      - typescript
-
-  '@teambit/documenter.code.react-playground@4.1.9(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/documenter.code.react-playground@4.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@teambit/base-ui.input.error': 1.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/base-ui.surfaces.split-pane.hover-splitter': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15681,53 +14919,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-live: 3.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-use-dimensions: 1.2.1(@types/react@17.0.80)(react@18.3.1)(typescript@5.1.3)
+      react-use-dimensions: 1.2.1(react@18.3.1)(typescript@5.1.3)
       use-debounce: 9.0.4(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - typescript
-
-  '@teambit/documenter.code.react-playground@4.1.9(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/base-ui.input.error': 1.0.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.surfaces.split-pane.hover-splitter': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.surfaces.split-pane.split-pane': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.2.6
-      core-js: 3.37.1
-      prism-react-renderer: 1.3.5(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-live: 3.2.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react-use-dimensions: 1.2.1(@types/react@18.3.3)(react@17.0.2)(typescript@5.1.3)
-      use-debounce: 9.0.4(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
-
-  '@teambit/documenter.code.react-playground@4.1.9(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/base-ui.input.error': 1.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/base-ui.surfaces.split-pane.hover-splitter': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/base-ui.surfaces.split-pane.split-pane': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      classnames: 2.2.6
-      core-js: 3.37.1
-      prism-react-renderer: 1.3.5(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-live: 3.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-use-dimensions: 1.2.1(@types/react@18.3.3)(react@18.3.1)(typescript@5.1.3)
-      use-debounce: 9.0.4(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
-
-  '@teambit/documenter.markdown.heading@0.1.8(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/documenter.ui.linked-heading': 4.1.8(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/documenter.markdown.heading@0.1.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15737,9 +14933,9 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.markdown.hybrid-live-code-snippet@0.1.12(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/documenter.markdown.hybrid-live-code-snippet@0.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
-      '@teambit/documenter.code.react-playground': 4.1.9(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/documenter.code.react-playground': 4.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       '@teambit/documenter.ui.code-snippet': 4.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
@@ -15748,33 +14944,11 @@ snapshots:
       - '@types/react'
       - typescript
 
-  '@teambit/documenter.markdown.hybrid-live-code-snippet@0.1.12(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/documenter.code.react-playground': 4.1.9(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      '@teambit/documenter.ui.code-snippet': 4.2.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
-
-  '@teambit/documenter.markdown.hybrid-live-code-snippet@0.1.12(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/documenter.code.react-playground': 4.1.9(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/documenter.ui.code-snippet': 4.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
-
-  '@teambit/documenter.markdown.mdx@0.1.13(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/documenter.markdown.mdx@0.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@mdx-js/react': 1.6.22(react@18.3.1)
       '@teambit/documenter.markdown.heading': 0.1.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       '@teambit/documenter.routing.external-link': 4.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/documenter.ui.block-quote': 4.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/documenter.ui.bold': 4.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15796,67 +14970,6 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
       - typescript
-
-  '@teambit/documenter.markdown.mdx@0.1.13(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)':
-    dependencies:
-      '@mdx-js/react': 1.6.22(react@17.0.2)
-      '@teambit/documenter.markdown.heading': 0.1.8(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      '@teambit/documenter.routing.external-link': 4.1.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.block-quote': 4.0.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.bold': 4.0.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.image': 4.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.inline-code': 0.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.italic': 4.0.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.ol': 4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.paragraph': 4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.separator': 4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.sup': 4.0.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.table.base-table': 4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.table.td': 4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.table.tr': 4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.ul': 4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.2.6
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
-
-  '@teambit/documenter.markdown.mdx@0.1.13(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@mdx-js/react': 1.6.22(react@18.3.1)
-      '@teambit/documenter.markdown.heading': 0.1.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/documenter.routing.external-link': 4.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.block-quote': 4.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.bold': 4.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.image': 4.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.inline-code': 0.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.italic': 4.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.ol': 4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.paragraph': 4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.separator': 4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.sup': 4.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.table.base-table': 4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.table.td': 4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.table.tr': 4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.ul': 4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      classnames: 2.2.6
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
-
-  '@teambit/documenter.routing.external-link@4.1.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/documenter.routing.external-link@4.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15864,14 +14977,6 @@ snapshots:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/documenter.ui.anchor@4.0.6(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/evangelist.elements.icon': 1.0.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/documenter.ui.anchor@4.0.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15881,14 +14986,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.anchor@4.0.8(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/evangelist.elements.icon': 1.0.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.anchor@4.0.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/evangelist.elements.icon': 1.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15897,13 +14994,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.block-quote@4.0.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.block-quote@4.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
@@ -15911,29 +15001,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.bold@4.0.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.bold@4.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/documenter.ui.code-snippet@4.2.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/documenter.ui.copied-message': 4.1.6(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      copy-to-clipboard: 3.3.3
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-syntax-highlighter: 13.5.3(react@17.0.2)
 
   '@teambit/documenter.ui.code-snippet@4.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15945,27 +15018,12 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-syntax-highlighter: 13.5.3(react@18.3.1)
 
-  '@teambit/documenter.ui.copied-message@4.1.6(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.copied-message@4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/documenter.ui.heading@4.1.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.text.heading': 1.0.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/documenter.ui.heading@4.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15975,14 +15033,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.heading@4.1.6(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.text.heading': 1.0.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.heading@4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/base-ui.text.heading': 1.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15991,26 +15041,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.image@4.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.image@4.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/documenter.ui.inline-code@0.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/documenter.ui.inline-code@0.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16019,28 +15055,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.italic@4.0.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.italic@4.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/documenter.ui.linked-heading@4.1.6(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/documenter.ui.anchor': 4.0.6(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.heading': 4.1.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/documenter.ui.linked-heading@4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16051,15 +15071,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.linked-heading@4.1.8(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/documenter.ui.anchor': 4.0.8(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.heading': 4.1.6(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.linked-heading@4.1.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/documenter.ui.anchor': 4.0.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -16069,28 +15080,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.ol@4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.ol@4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/documenter.ui.paragraph@4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.text.paragraph': 1.0.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/base-ui.theme.sizes': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/documenter.ui.paragraph@4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16101,74 +15096,30 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.property-table@4.1.10(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/documenter.ui.property-table@4.1.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@teambit/documenter.ui.table': 4.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/documenter.ui.table-row': 4.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
-      react-use-dimensions: 1.2.1(@types/react@17.0.80)(react@18.3.1)(typescript@5.1.3)
+      react-use-dimensions: 1.2.1(react@18.3.1)(typescript@5.1.3)
       use-debounce: 3.4.3(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
       - typescript
 
-  '@teambit/documenter.ui.property-table@4.1.10(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/documenter.ui.table': 4.1.9(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.table-row': 4.1.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-use-dimensions: 1.2.1(@types/react@18.3.3)(react@17.0.2)(typescript@5.1.3)
-      use-debounce: 3.4.3(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - react-dom
-      - typescript
-
-  '@teambit/documenter.ui.property-table@4.1.10(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/documenter.ui.table': 4.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.table-row': 4.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
-      react-use-dimensions: 1.2.1(@types/react@18.3.3)(react@18.3.1)(typescript@5.1.3)
-      use-debounce: 3.4.3(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-      - react-dom
-      - typescript
-
-  '@teambit/documenter.ui.property-table@4.1.3(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/documenter.ui.property-table@4.1.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@teambit/documenter.ui.table': 4.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/documenter.ui.table-row': 4.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      react-use-dimensions: 1.2.1(@types/react@17.0.80)(react@18.3.1)(typescript@5.1.3)
+      react-use-dimensions: 1.2.1(react@18.3.1)(typescript@5.1.3)
       use-debounce: 3.4.3(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - typescript
-
-  '@teambit/documenter.ui.property-table@4.1.3(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/documenter.ui.table': 4.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.table-row': 4.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-use-dimensions: 1.2.1(@types/react@18.3.3)(react@18.3.1)(typescript@5.1.3)
-      use-debounce: 3.4.3(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
-
-  '@teambit/documenter.ui.section@4.1.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/documenter.ui.section@4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16177,26 +15128,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.separator@4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.separator@4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/documenter.ui.sup@4.0.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/documenter.ui.sup@4.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16212,11 +15149,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.table-column@4.0.4(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      react: 17.0.2
-
   '@teambit/documenter.ui.table-column@4.0.4(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
@@ -16229,24 +15161,10 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.table-heading-column@4.0.8(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      react: 17.0.2
-
   '@teambit/documenter.ui.table-heading-column@4.0.8(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       react: 18.3.1
-
-  '@teambit/documenter.ui.table-heading-row@4.0.11(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.layout.grid-component': 1.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.table-heading-column': 4.0.8(react@17.0.2)
-      classnames: 2.5.1
-      react: 17.0.2
-    transitivePeerDependencies:
-      - react-dom
 
   '@teambit/documenter.ui.table-heading-row@4.0.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16266,16 +15184,6 @@ snapshots:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/documenter.ui.table-row@4.1.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.layout.grid-component': 1.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.table-column': 4.0.4(react@17.0.2)
-      classnames: 2.2.6
-      react: 17.0.2
-      react-syntax-highlighter: 15.4.3(react@17.0.2)
-    transitivePeerDependencies:
-      - react-dom
 
   '@teambit/documenter.ui.table-row@4.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16297,13 +15205,6 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-syntax-highlighter: 13.5.3(react@18.3.1)
 
-  '@teambit/documenter.ui.table.base-table@4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.table.base-table@4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
@@ -16311,26 +15212,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.table.td@4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.table.td@4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/documenter.ui.table.tr@4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/documenter.ui.table.tr@4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16348,15 +15235,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/documenter.ui.table@4.1.9(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/documenter.ui.table-heading-row': 4.0.11(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.table-row': 4.1.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.5.1
-      react: 17.0.2
-    transitivePeerDependencies:
-      - react-dom
-
   '@teambit/documenter.ui.table@4.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/documenter.ui.table-heading-row': 4.0.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -16366,26 +15244,12 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  '@teambit/documenter.ui.ul@4.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      classnames: 2.5.1
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/documenter.ui.ul@4.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       classnames: 2.5.1
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/evangelist.elements.icon@1.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.elements.icon': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/evangelist.elements.icon@1.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16394,30 +15258,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/evangelist.elements.icon@1.0.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.elements.icon': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/evangelist.elements.icon@1.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/base-ui.elements.icon': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/graphql.hooks.use-query-light@1.0.0(encoding@0.1.13)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      graphql: 14.7.0
-      graphql-request: 4.3.0(encoding@0.1.13)(graphql@14.7.0)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      use-deep-compare: 1.2.1(react@17.0.2)
-    transitivePeerDependencies:
-      - encoding
 
   '@teambit/graphql.hooks.use-query-light@1.0.0(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16450,14 +15296,6 @@ snapshots:
     dependencies:
       '@teambit/bit-error': 0.0.402
       '@teambit/component-version': 0.0.408
-      decamelize: 1.2.0
-      lodash: 4.17.21
-      semver: 7.3.4
-
-  '@teambit/legacy-bit-id@1.0.1':
-    dependencies:
-      '@teambit/bit-error': 0.0.402
-      '@teambit/component-version': 1.0.0
       decamelize: 1.2.0
       lodash: 4.17.21
       semver: 7.3.4
@@ -16528,52 +15366,27 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@teambit/mdx.ui.docs.link@0.0.500(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/mdx.ui.docs.link@0.0.500(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@teambit/base-react.navigation.link': 2.0.27(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/base-react.navigation.link': 2.0.27(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
 
-  '@teambit/mdx.ui.docs.link@0.0.500(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/mdx.ui.docs.link@0.0.505(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@teambit/base-react.navigation.link': 2.0.27(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-
-  '@teambit/mdx.ui.docs.link@0.0.505(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/base-react.navigation.link': 2.0.31(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/base-react.navigation.link': 2.0.31(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
 
-  '@teambit/mdx.ui.docs.link@0.0.505(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-react.navigation.link': 2.0.31(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-    transitivePeerDependencies:
-      - '@types/react'
-      - react-dom
-
-  '@teambit/mdx.ui.docs.link@0.0.505(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/base-react.navigation.link': 2.0.31(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
-    transitivePeerDependencies:
-      - '@types/react'
-      - react-dom
-
-  '@teambit/mdx.ui.docs.snippet@0.0.503(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/mdx.ui.docs.snippet@0.0.503(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@mdx-js/react': 1.6.22(react@18.3.1)
-      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       '@teambit/mdx.ui.mdx-scope-context': 0.0.498(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
@@ -16582,22 +15395,10 @@ snapshots:
       - '@types/react'
       - typescript
 
-  '@teambit/mdx.ui.docs.snippet@0.0.503(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/mdx.ui.docs.snippet@0.0.509(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@mdx-js/react': 1.6.22(react@18.3.1)
-      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/mdx.ui.mdx-scope-context': 0.0.498(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
-
-  '@teambit/mdx.ui.docs.snippet@0.0.509(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@mdx-js/react': 1.6.22(react@18.3.1)
-      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       '@teambit/mdx.ui.mdx-scope-context': 1.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
@@ -16606,35 +15407,11 @@ snapshots:
       - '@types/react'
       - typescript
 
-  '@teambit/mdx.ui.docs.snippet@0.0.509(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)':
+  '@teambit/mdx.ui.mdx-layout@0.0.515(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
-      '@mdx-js/react': 1.6.22(react@17.0.2)
-      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      '@teambit/mdx.ui.mdx-scope-context': 1.0.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
-
-  '@teambit/mdx.ui.docs.snippet@0.0.509(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@mdx-js/react': 1.6.22(react@18.3.1)
-      '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.12(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/mdx.ui.mdx-scope-context': 1.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
-
-  '@teambit/mdx.ui.mdx-layout@0.0.515(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/documenter.markdown.mdx': 0.1.13(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/mdx.ui.docs.link': 0.0.500(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/mdx.ui.docs.snippet': 0.0.503(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/documenter.markdown.mdx': 0.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/mdx.ui.docs.link': 0.0.500(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/mdx.ui.docs.snippet': 0.0.503(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -16643,48 +15420,11 @@ snapshots:
       - '@types/react'
       - typescript
 
-  '@teambit/mdx.ui.mdx-layout@0.0.515(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/mdx.ui.mdx-layout@1.0.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
-      '@teambit/documenter.markdown.mdx': 0.1.13(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/mdx.ui.docs.link': 0.0.500(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/mdx.ui.docs.snippet': 0.0.503(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - '@types/react'
-      - typescript
-
-  '@teambit/mdx.ui.mdx-layout@1.0.9(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/documenter.markdown.mdx': 0.1.13(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/mdx.ui.docs.link': 0.0.505(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/mdx.ui.docs.snippet': 0.0.509(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - '@types/react'
-      - react-dom
-      - typescript
-
-  '@teambit/mdx.ui.mdx-layout@1.0.9(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/documenter.markdown.mdx': 0.1.13(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      '@teambit/mdx.ui.docs.link': 0.0.505(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/mdx.ui.docs.snippet': 0.0.509(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      react: 17.0.2
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - '@types/react'
-      - react-dom
-      - typescript
-
-  '@teambit/mdx.ui.mdx-layout@1.0.9(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/documenter.markdown.mdx': 0.1.13(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/mdx.ui.docs.link': 0.0.505(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/mdx.ui.docs.snippet': 0.0.509(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/documenter.markdown.mdx': 0.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/mdx.ui.docs.link': 0.0.505(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/mdx.ui.docs.snippet': 0.0.509(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       react: 18.3.1
     transitivePeerDependencies:
       - '@testing-library/react'
@@ -16703,12 +15443,6 @@ snapshots:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/mdx.ui.mdx-scope-context@1.0.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@teambit/mdx.ui.mdx-scope-context@1.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16731,69 +15465,7 @@ snapshots:
     dependencies:
       dedent: 0.7.0
 
-  '@teambit/node.node@0.1.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@12.20.4)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
-    dependencies:
-      '@babel/runtime': 7.20.0
-      '@mdx-js/react': 1.6.22(react@18.3.1)
-      '@teambit/defender.eslint-linter': 1.0.3
-      '@teambit/defender.jest-tester': 0.0.12(@babel/traverse@7.24.6)(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-      '@teambit/defender.prettier-formatter': 1.0.0
-      '@teambit/dependencies.modules.packages-excluder': 0.0.70(react@18.3.1)
-      '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/node.generator.node-starters': 0.0.0-64e4ddb6778cd055a7e0a05e826bce91c99ea894
-      '@teambit/node.generator.node-templates': 0.0.5
-      '@teambit/preview.react-preview': 0.0.42(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
-      '@teambit/react.mounter': 0.0.10
-      '@teambit/react.react-env': 0.1.18(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@12.20.4)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/typescript.typescript-compiler': 2.0.2
-      core-js: 3.37.1
-      jest: 29.3.1(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@babel/traverse'
-      - '@swc/core'
-      - '@testing-library/react'
-      - '@types/express'
-      - '@types/node'
-      - '@types/react'
-      - '@types/webpack'
-      - babel-plugin-macros
-      - bufferutil
-      - canvas
-      - clean-css
-      - csso
-      - debug
-      - encoding
-      - esbuild
-      - eslint
-      - eslint-plugin-import
-      - eslint-plugin-jsx-a11y
-      - eslint-plugin-react
-      - eslint-plugin-react-hooks
-      - fibers
-      - graphql
-      - html-webpack-plugin
-      - less
-      - node-notifier
-      - node-sass
-      - puppeteer
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - ts-node
-      - type-fest
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-dev-server
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@teambit/node.node@0.1.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/react@17.0.80)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
+  '@teambit/node.node@0.1.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
     dependencies:
       '@babel/runtime': 7.20.0
       '@mdx-js/react': 1.6.22(react@18.3.1)
@@ -16804,71 +15476,9 @@ snapshots:
       '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/node.generator.node-starters': 0.0.0-64e4ddb6778cd055a7e0a05e826bce91c99ea894
       '@teambit/node.generator.node-templates': 0.0.5
-      '@teambit/preview.react-preview': 0.0.42(@types/react@17.0.80)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
+      '@teambit/preview.react-preview': 0.0.42(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
       '@teambit/react.mounter': 0.0.10
-      '@teambit/react.react-env': 0.1.18(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/react@17.0.80)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/typescript.typescript-compiler': 2.0.2
-      core-js: 3.37.1
-      jest: 29.3.1(@types/node@20.14.2)(babel-plugin-macros@3.1.0)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@babel/traverse'
-      - '@swc/core'
-      - '@testing-library/react'
-      - '@types/express'
-      - '@types/node'
-      - '@types/react'
-      - '@types/webpack'
-      - babel-plugin-macros
-      - bufferutil
-      - canvas
-      - clean-css
-      - csso
-      - debug
-      - encoding
-      - esbuild
-      - eslint
-      - eslint-plugin-import
-      - eslint-plugin-jsx-a11y
-      - eslint-plugin-react
-      - eslint-plugin-react-hooks
-      - fibers
-      - graphql
-      - html-webpack-plugin
-      - less
-      - node-notifier
-      - node-sass
-      - puppeteer
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - ts-node
-      - type-fest
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-dev-server
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@teambit/node.node@0.1.19(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
-    dependencies:
-      '@babel/runtime': 7.20.0
-      '@mdx-js/react': 1.6.22(react@18.3.1)
-      '@teambit/defender.eslint-linter': 1.0.3
-      '@teambit/defender.jest-tester': 0.0.12(@babel/traverse@7.24.6)(@types/node@20.14.2)(babel-plugin-macros@3.1.0)
-      '@teambit/defender.prettier-formatter': 1.0.0
-      '@teambit/dependencies.modules.packages-excluder': 0.0.70(react@18.3.1)
-      '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/node.generator.node-starters': 0.0.0-64e4ddb6778cd055a7e0a05e826bce91c99ea894
-      '@teambit/node.generator.node-templates': 0.0.5
-      '@teambit/preview.react-preview': 0.0.42(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
-      '@teambit/react.mounter': 0.0.10
-      '@teambit/react.react-env': 0.1.18(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
+      '@teambit/react.react-env': 0.1.18(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@teambit/typescript.typescript-compiler': 2.0.2
       core-js: 3.37.1
       jest: 29.3.1(@types/node@20.14.2)(babel-plugin-macros@3.1.0)
@@ -16919,10 +15529,10 @@ snapshots:
 
   '@teambit/preview.modules.preview-modules@1.0.3': {}
 
-  '@teambit/preview.react-preview@0.0.42(@types/react@17.0.80)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)':
+  '@teambit/preview.react-preview@0.0.42(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)':
     dependencies:
       '@babel/core': 7.19.6
-      '@teambit/docs.docs-template': 0.0.12(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(typescript@5.1.3)
+      '@teambit/docs.docs-template': 0.0.12(encoding@0.1.13)(graphql@14.7.0)(typescript@5.1.3)
       '@teambit/react.mounter': 0.0.10
       '@teambit/react.webpack.react-webpack': 1.0.0(@babel/core@7.19.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.84.1))
       '@teambit/webpack.webpack-bundler': 0.0.9
@@ -16960,138 +15570,7 @@ snapshots:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  '@teambit/preview.react-preview@0.0.42(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)':
-    dependencies:
-      '@babel/core': 7.19.6
-      '@teambit/docs.docs-template': 0.0.12(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(typescript@5.1.3)
-      '@teambit/react.mounter': 0.0.10
-      '@teambit/react.webpack.react-webpack': 1.0.0(@babel/core@7.19.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.84.1))
-      '@teambit/webpack.webpack-bundler': 0.0.9
-      '@teambit/webpack.webpack-dev-server': 0.0.18(eslint@7.32.0)(typescript@5.1.3)(webpack@5.84.1)
-      object-hash: 3.0.0
-      react: 18.3.1
-      webpack: 5.84.1
-      webpack-dev-server: 4.15.0(webpack@5.84.1)
-    transitivePeerDependencies:
-      - '@swc/core'
-      - '@testing-library/react'
-      - '@types/react'
-      - '@types/webpack'
-      - bufferutil
-      - clean-css
-      - csso
-      - debug
-      - encoding
-      - esbuild
-      - eslint
-      - fibers
-      - graphql
-      - less
-      - node-sass
-      - react-dom
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@teambit/preview.react-preview@1.0.29(@babel/core@7.24.6)(@types/react-dom@17.0.25)(@types/react@17.0.80)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)':
-    dependencies:
-      '@teambit/docs.docs-template': 1.0.7(@types/react-dom@17.0.25)(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.mounter': 1.0.4(@types/react@17.0.80)
-      '@teambit/react.webpack.react-webpack': 1.0.26(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/webpack.webpack-bundler': 1.0.7
-      '@teambit/webpack.webpack-dev-server': 1.0.8(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0)
-      '@types/react': 17.0.80
-      '@types/react-dom': 17.0.25
-      object-hash: 3.0.0
-      react: 18.3.1
-      webpack: 5.91.0
-      webpack-dev-server: 4.15.0(webpack@5.91.0)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@parcel/css'
-      - '@swc/core'
-      - '@swc/css'
-      - '@testing-library/react'
-      - '@types/webpack'
-      - bufferutil
-      - clean-css
-      - csso
-      - debug
-      - encoding
-      - esbuild
-      - eslint
-      - fibers
-      - graphql
-      - less
-      - lightningcss
-      - node-sass
-      - react-dom
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@teambit/preview.react-preview@1.0.29(@babel/core@7.24.6)(@types/react-dom@18.3.0)(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/docs.docs-template': 1.0.7(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/react.mounter': 1.0.4(@types/react@18.3.3)
-      '@teambit/react.webpack.react-webpack': 1.0.26(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/webpack.webpack-bundler': 1.0.7
-      '@teambit/webpack.webpack-dev-server': 1.0.8(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0)
-      '@types/react': 18.3.3
-      '@types/react-dom': 18.3.0
-      object-hash: 3.0.0
-      react: 18.3.1
-      webpack: 5.91.0
-      webpack-dev-server: 4.15.0(webpack@5.91.0)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@parcel/css'
-      - '@swc/core'
-      - '@swc/css'
-      - '@testing-library/react'
-      - '@types/webpack'
-      - bufferutil
-      - clean-css
-      - csso
-      - debug
-      - encoding
-      - esbuild
-      - eslint
-      - fibers
-      - graphql
-      - less
-      - lightningcss
-      - node-sass
-      - react-dom
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@teambit/react.apps.react-app-types@0.0.42(@babel/core@7.24.6)(@types/express@4.17.21)(@types/react@17.0.80)(@types/webpack@5.28.5)(eslint@7.32.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
+  '@teambit/react.apps.react-app-types@0.0.42(@babel/core@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(eslint@7.32.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
     dependencies:
       '@prerenderer/prerenderer': 1.2.5(@types/express@4.17.21)
       '@prerenderer/renderer-jsdom': 1.1.9
@@ -17100,60 +15579,7 @@ snapshots:
       '@teambit/react.rendering.ssr': 1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/react.webpack.react-webpack': 1.0.0(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@teambit/toolbox.network.get-port': 1.0.0
-      '@teambit/ui-foundation.ui.pages.static-error': 0.0.87(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/webpack.transformers.favicon-reload': 0.0.0-3ed06889b56c0672f5ef2a3cbaed9d8ea49afefb
-      '@teambit/webpack.webpack-bundler': 0.0.9
-      '@teambit/webpack.webpack-dev-server': 0.0.18(eslint@7.32.0)(typescript@5.1.3)(webpack@5.84.1)
-      express: 4.18.2
-      fs-extra: 10.1.0
-      lodash: 4.17.21
-      terser-webpack-plugin: 5.2.0(webpack@5.84.1)
-      url-join: 4.0.0
-      webpack: 5.84.1
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@swc/core'
-      - '@testing-library/react'
-      - '@types/express'
-      - '@types/react'
-      - '@types/webpack'
-      - bufferutil
-      - canvas
-      - clean-css
-      - csso
-      - debug
-      - esbuild
-      - eslint
-      - fibers
-      - html-webpack-plugin
-      - less
-      - node-sass
-      - puppeteer
-      - react
-      - react-dom
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-dev-server
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@teambit/react.apps.react-app-types@0.0.42(@babel/core@7.24.6)(@types/express@4.17.21)(@types/react@18.3.3)(@types/webpack@5.28.5)(eslint@7.32.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
-    dependencies:
-      '@prerenderer/prerenderer': 1.2.5(@types/express@4.17.21)
-      '@prerenderer/renderer-jsdom': 1.1.9
-      '@prerenderer/webpack-plugin': 5.3.10(@types/express@4.17.21)(html-webpack-plugin@5.5.0(webpack@5.91.0))(webpack@5.84.1)
-      '@teambit/bit-error': 0.0.402
-      '@teambit/react.rendering.ssr': 1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.webpack.react-webpack': 1.0.0(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/toolbox.network.get-port': 1.0.0
-      '@teambit/ui-foundation.ui.pages.static-error': 0.0.87(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/ui-foundation.ui.pages.static-error': 0.0.87(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/webpack.transformers.favicon-reload': 0.0.0-3ed06889b56c0672f5ef2a3cbaed9d8ea49afefb
       '@teambit/webpack.webpack-bundler': 0.0.9
       '@teambit/webpack.webpack-dev-server': 0.0.18(eslint@7.32.0)(typescript@5.1.3)(webpack@5.84.1)
@@ -17211,34 +15637,6 @@ snapshots:
       - react-dom
       - supports-color
 
-  '@teambit/react.babel.bit-react-transformer@1.0.22(react-dom@18.2.0(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@babel/core': 7.19.6
-      '@babel/types': 7.22.3
-      '@teambit/component-id': 1.2.0
-      '@teambit/react.ui.highlighter.component-metadata.bit-component-meta': 0.0.41(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
-      find-root: 1.1.0
-      fs-extra: 10.0.0
-      memoizee: 0.4.15
-    transitivePeerDependencies:
-      - react
-      - react-dom
-      - supports-color
-
-  '@teambit/react.babel.bit-react-transformer@1.0.23(react-dom@18.2.0(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/core': 7.19.6
-      '@babel/types': 7.22.3
-      '@teambit/component-id': 1.2.0
-      '@teambit/react.ui.highlighter.component-metadata.bit-component-meta': 0.0.41(react-dom@18.2.0(react@17.0.2))(react@17.0.2)
-      find-root: 1.1.0
-      fs-extra: 10.0.0
-      memoizee: 0.4.15
-    transitivePeerDependencies:
-      - react
-      - react-dom
-      - supports-color
-
   '@teambit/react.babel.bit-react-transformer@1.0.23(react-dom@18.2.0(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/core': 7.19.6
@@ -17276,25 +15674,6 @@ snapshots:
     dependencies:
       dedent: 0.7.0
 
-  '@teambit/react.jest.react-jest@0.0.8(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/node@12.20.4)(babel-plugin-macros@3.1.0)':
-    dependencies:
-      '@babel/preset-react': 7.18.6(@babel/core@7.24.6)
-      '@teambit/defender.jest-tester': 0.0.12(@babel/traverse@7.24.6)(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-      '@testing-library/jest-dom': 5.16.5
-      jest-environment-jsdom: 29.3.1
-      react-app-polyfill: 3.0.0
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@babel/traverse'
-      - '@types/node'
-      - babel-plugin-macros
-      - bufferutil
-      - canvas
-      - node-notifier
-      - supports-color
-      - ts-node
-      - utf-8-validate
-
   '@teambit/react.jest.react-jest@0.0.8(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/node@20.14.2)(babel-plugin-macros@3.1.0)':
     dependencies:
       '@babel/preset-react': 7.18.6(@babel/core@7.24.6)
@@ -17327,100 +15706,16 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-error-boundary: 3.1.4(react@18.3.1)
 
-  '@teambit/react.mounter@1.0.4(@types/react@17.0.80)':
+  '@teambit/react.mounter@1.0.6':
     dependencies:
-      '@teambit/react.ui.highlighter-provider': 0.0.211(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/react.ui.highlighter-provider': 0.0.211(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-error-boundary: 3.1.4(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
 
-  '@teambit/react.mounter@1.0.4(@types/react@18.3.3)':
-    dependencies:
-      '@teambit/react.ui.highlighter-provider': 0.0.211(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-error-boundary: 3.1.4(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-
-  '@teambit/react.mounter@1.0.6(@types/react@18.3.3)':
-    dependencies:
-      '@teambit/react.ui.highlighter-provider': 0.0.211(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-error-boundary: 3.1.4(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-
-  '@teambit/react.react-env@0.1.18(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@12.20.4)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
-    dependencies:
-      '@babel/runtime': 7.20.0
-      '@mdx-js/react': 1.6.22(react@18.3.1)
-      '@teambit/defender.eslint-linter': 1.0.3
-      '@teambit/defender.jest-tester': 0.0.12(@babel/traverse@7.24.6)(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-      '@teambit/defender.prettier-formatter': 1.0.0
-      '@teambit/dependencies.modules.packages-excluder': 0.0.70(react@18.3.1)
-      '@teambit/docs.docs-template': 0.0.12(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(typescript@5.1.3)
-      '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/preview.react-preview': 0.0.42(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
-      '@teambit/react.apps.react-app-types': 0.0.42(@babel/core@7.24.6)(@types/express@4.17.21)(@types/react@18.3.3)(@types/webpack@5.28.5)(eslint@7.32.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/react.eslint-config-bit-react': 0.0.794(eslint@7.32.0)(typescript@5.1.3)
-      '@teambit/react.generator.react-starters': 0.0.13
-      '@teambit/react.generator.react-templates': 0.0.14
-      '@teambit/react.jest.react-jest': 0.0.8(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-      '@teambit/react.mounter': 0.0.10
-      '@teambit/typescript.typescript-compiler': 2.0.2
-      '@testing-library/jest-dom': 5.16.5
-      core-js: 3.37.1
-      eslint: 7.32.0
-      graphql: 14.7.0
-      jest: 29.3.1(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      typescript: 5.1.3
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@babel/traverse'
-      - '@swc/core'
-      - '@testing-library/react'
-      - '@types/express'
-      - '@types/node'
-      - '@types/react'
-      - '@types/webpack'
-      - babel-plugin-macros
-      - bufferutil
-      - canvas
-      - clean-css
-      - csso
-      - debug
-      - encoding
-      - esbuild
-      - eslint-plugin-import
-      - eslint-plugin-jsx-a11y
-      - eslint-plugin-react
-      - eslint-plugin-react-hooks
-      - fibers
-      - html-webpack-plugin
-      - less
-      - node-notifier
-      - node-sass
-      - puppeteer
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - ts-node
-      - type-fest
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-dev-server
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@teambit/react.react-env@0.1.18(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/react@17.0.80)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
+  '@teambit/react.react-env@0.1.18(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
     dependencies:
       '@babel/runtime': 7.20.0
       '@mdx-js/react': 1.6.22(react@18.3.1)
@@ -17428,76 +15723,10 @@ snapshots:
       '@teambit/defender.jest-tester': 0.0.12(@babel/traverse@7.24.6)(@types/node@20.14.2)(babel-plugin-macros@3.1.0)
       '@teambit/defender.prettier-formatter': 1.0.0
       '@teambit/dependencies.modules.packages-excluder': 0.0.70(react@18.3.1)
-      '@teambit/docs.docs-template': 0.0.12(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(typescript@5.1.3)
+      '@teambit/docs.docs-template': 0.0.12(encoding@0.1.13)(graphql@14.7.0)(typescript@5.1.3)
       '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/preview.react-preview': 0.0.42(@types/react@17.0.80)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
-      '@teambit/react.apps.react-app-types': 0.0.42(@babel/core@7.24.6)(@types/express@4.17.21)(@types/react@17.0.80)(@types/webpack@5.28.5)(eslint@7.32.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
-      '@teambit/react.eslint-config-bit-react': 0.0.794(eslint@7.32.0)(typescript@5.1.3)
-      '@teambit/react.generator.react-starters': 0.0.13
-      '@teambit/react.generator.react-templates': 0.0.14
-      '@teambit/react.jest.react-jest': 0.0.8(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/node@20.14.2)(babel-plugin-macros@3.1.0)
-      '@teambit/react.mounter': 0.0.10
-      '@teambit/typescript.typescript-compiler': 2.0.2
-      '@testing-library/jest-dom': 5.16.5
-      core-js: 3.37.1
-      eslint: 7.32.0
-      graphql: 14.7.0
-      jest: 29.3.1(@types/node@20.14.2)(babel-plugin-macros@3.1.0)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      typescript: 5.1.3
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@babel/traverse'
-      - '@swc/core'
-      - '@testing-library/react'
-      - '@types/express'
-      - '@types/node'
-      - '@types/react'
-      - '@types/webpack'
-      - babel-plugin-macros
-      - bufferutil
-      - canvas
-      - clean-css
-      - csso
-      - debug
-      - encoding
-      - esbuild
-      - eslint-plugin-import
-      - eslint-plugin-jsx-a11y
-      - eslint-plugin-react
-      - eslint-plugin-react-hooks
-      - fibers
-      - html-webpack-plugin
-      - less
-      - node-notifier
-      - node-sass
-      - puppeteer
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - ts-node
-      - type-fest
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-dev-server
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@teambit/react.react-env@0.1.18(@babel/core@7.24.6)(@babel/traverse@7.24.6)(@types/express@4.17.21)(@types/node@20.14.2)(@types/react@18.3.3)(@types/webpack@5.28.5)(babel-plugin-macros@3.1.0)(encoding@0.1.13)(html-webpack-plugin@5.5.0(webpack@5.91.0))(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
-    dependencies:
-      '@babel/runtime': 7.20.0
-      '@mdx-js/react': 1.6.22(react@18.3.1)
-      '@teambit/defender.eslint-linter': 1.0.3
-      '@teambit/defender.jest-tester': 0.0.12(@babel/traverse@7.24.6)(@types/node@20.14.2)(babel-plugin-macros@3.1.0)
-      '@teambit/defender.prettier-formatter': 1.0.0
-      '@teambit/dependencies.modules.packages-excluder': 0.0.70(react@18.3.1)
-      '@teambit/docs.docs-template': 0.0.12(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(typescript@5.1.3)
-      '@teambit/mdx.ui.mdx-scope-context': 0.0.496(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/preview.react-preview': 0.0.42(@types/react@18.3.3)(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
-      '@teambit/react.apps.react-app-types': 0.0.42(@babel/core@7.24.6)(@types/express@4.17.21)(@types/react@18.3.3)(@types/webpack@5.28.5)(eslint@7.32.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
+      '@teambit/preview.react-preview': 0.0.42(@types/webpack@5.28.5)(encoding@0.1.13)(eslint@7.32.0)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)
+      '@teambit/react.apps.react-app-types': 0.0.42(@babel/core@7.24.6)(@types/express@4.17.21)(@types/webpack@5.28.5)(eslint@7.32.0)(html-webpack-plugin@5.5.0(webpack@5.91.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))
       '@teambit/react.eslint-config-bit-react': 0.0.794(eslint@7.32.0)(typescript@5.1.3)
       '@teambit/react.generator.react-starters': 0.0.13
       '@teambit/react.generator.react-templates': 0.0.14
@@ -17565,9 +15794,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@teambit/react.ui.component-highlighter@0.2.1(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/react.ui.component-highlighter@0.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@floating-ui/react-dom': 0.7.2(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@floating-ui/react-dom': 0.7.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/base-ui.routing.native-link': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/component-id': 0.0.402
       '@teambit/component.modules.component-url': 0.0.124(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -17587,38 +15816,16 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@teambit/react.ui.component-highlighter@0.2.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@floating-ui/react-dom': 0.7.2(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/base-ui.routing.native-link': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/component-id': 0.0.402
-      '@teambit/component.modules.component-url': 0.0.124(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.modules.dom-to-react': 0.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.ui.highlighter.component-metadata.bit-component-meta': 0.0.21(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.ui.hover-selector': 0.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@tippyjs/react': 4.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      classnames: 2.5.1
-      core-js: 3.37.1
-      get-xpath: 3.1.0
-      lodash.compact: 3.0.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      url-join: 4.0.1
-      use-debounce: 8.0.4(react@18.3.1)
-      uuid: 3.4.0
-    transitivePeerDependencies:
-      - '@types/react'
-
-  '@teambit/react.ui.docs-app@0.0.207(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/react.ui.docs-app@0.0.207(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@teambit/design.theme.icons-font': 2.0.26(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/design.themes.theme-toggler': 0.1.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.code.react-playground': 4.1.9(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/documenter.code.react-playground': 4.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       '@teambit/documenter.ui.linked-heading': 4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/documenter.ui.section': 4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/react.ui.docs.compositions-carousel': 0.0.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.ui.docs.docs-content': 0.0.16(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/react.ui.docs.properties-table': 0.0.12(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/react.ui.docs.docs-content': 0.0.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/react.ui.docs.properties-table': 0.0.12(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       classnames: 2.2.6
       core-js: 3.37.1
       jsx-to-string: 1.4.0
@@ -17632,76 +15839,13 @@ snapshots:
       - graphql
       - typescript
 
-  '@teambit/react.ui.docs-app@0.0.207(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/design.theme.icons-font': 2.0.26(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/design.themes.theme-toggler': 0.1.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.code.react-playground': 4.1.9(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/documenter.ui.linked-heading': 4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.section': 4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.ui.docs.compositions-carousel': 0.0.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.ui.docs.docs-content': 0.0.16(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/react.ui.docs.properties-table': 0.0.12(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      classnames: 2.2.6
-      core-js: 3.37.1
-      jsx-to-string: 1.4.0
-      lodash: 4.17.21
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - '@types/react'
-      - encoding
-      - graphql
-      - typescript
-
-  '@teambit/react.ui.docs-app@1.0.21(@types/react-dom@17.0.25)(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/react.ui.docs-app@1.0.21(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@teambit/design.theme.icons-font': 2.0.29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/design.themes.theme-toggler': 0.1.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/react.ui.docs.compositions-carousel': 0.0.26(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.ui.docs.docs-content': 0.0.30(@types/react-dom@17.0.25)(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.ui.docs.properties-table': 0.0.24(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/react': 17.0.80
-      '@types/react-dom': 17.0.25
-      classnames: 2.2.6
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - encoding
-      - graphql
-      - typescript
-
-  '@teambit/react.ui.docs-app@1.0.21(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/design.theme.icons-font': 2.0.29(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/design.themes.theme-toggler': 0.1.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/react.ui.docs.compositions-carousel': 0.0.26(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/react.ui.docs.docs-content': 0.0.30(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      '@teambit/react.ui.docs.properties-table': 0.0.24(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      '@types/react': 18.3.3
-      '@types/react-dom': 18.3.0
-      classnames: 2.2.6
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - encoding
-      - graphql
-      - typescript
-
-  '@teambit/react.ui.docs-app@1.0.21(@types/react-dom@18.3.0)(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/design.theme.icons-font': 2.0.29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/design.themes.theme-toggler': 0.1.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.ui.docs.compositions-carousel': 0.0.26(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/react.ui.docs.docs-content': 0.0.30(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/react.ui.docs.properties-table': 0.0.24(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@types/react': 18.3.3
-      '@types/react-dom': 18.3.0
+      '@teambit/react.ui.docs.docs-content': 0.0.30(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/react.ui.docs.properties-table': 0.0.24(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       classnames: 2.2.6
       core-js: 3.37.1
       react: 18.3.1
@@ -17720,15 +15864,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-error-boundary: 3.1.4(react@18.3.1)
-
-  '@teambit/react.ui.docs.apply-providers@0.0.21(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.utils.composer': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/react.ui.error-fallback': 0.0.130(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-error-boundary: 3.1.4(react@17.0.2)
 
   '@teambit/react.ui.docs.apply-providers@0.0.21(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -17749,16 +15884,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/react.ui.docs.compositions-carousel@0.0.26(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/compositions.ui.compositions-overview': 0.0.10(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.linked-heading': 4.1.6(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.section': 4.1.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/react.ui.docs.apply-providers': 0.0.21(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
   '@teambit/react.ui.docs.compositions-carousel@0.0.26(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/compositions.ui.compositions-overview': 0.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -17769,10 +15894,10 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/react.ui.docs.docs-content@0.0.16(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/react.ui.docs.docs-content@0.0.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@teambit/documenter.ui.section': 4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/mdx.ui.mdx-layout': 0.0.515(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/mdx.ui.mdx-layout': 0.0.515(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       '@teambit/react.ui.error-fallback': 0.0.120(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       lodash: 4.17.21
@@ -17784,28 +15909,11 @@ snapshots:
       - '@types/react'
       - typescript
 
-  '@teambit/react.ui.docs.docs-content@0.0.16(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/react.ui.docs.docs-content@0.0.30(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@teambit/documenter.ui.section': 4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/mdx.ui.mdx-layout': 0.0.515(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/react.ui.error-fallback': 0.0.120(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      lodash: 4.17.21
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-error-boundary: 3.1.4(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - '@types/react'
-      - typescript
-
-  '@teambit/react.ui.docs.docs-content@0.0.30(@types/react-dom@17.0.25)(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/documenter.ui.section': 4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/mdx.ui.mdx-layout': 1.0.9(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/mdx.ui.mdx-layout': 1.0.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       '@teambit/react.ui.error-fallback': 0.0.130(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/react': 17.0.80
-      '@types/react-dom': 17.0.25
       core-js: 3.37.1
       lodash: 4.17.21
       react: 18.3.1
@@ -17815,43 +15923,11 @@ snapshots:
       - '@testing-library/react'
       - typescript
 
-  '@teambit/react.ui.docs.docs-content@0.0.30(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/documenter.ui.section': 4.1.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/mdx.ui.mdx-layout': 1.0.9(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      '@teambit/react.ui.error-fallback': 0.0.130(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@types/react': 18.3.3
-      '@types/react-dom': 18.3.0
-      core-js: 3.37.1
-      lodash: 4.17.21
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-error-boundary: 3.1.4(react@17.0.2)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - typescript
-
-  '@teambit/react.ui.docs.docs-content@0.0.30(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/documenter.ui.section': 4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/mdx.ui.mdx-layout': 1.0.9(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/react.ui.error-fallback': 0.0.130(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/react': 18.3.3
-      '@types/react-dom': 18.3.0
-      core-js: 3.37.1
-      lodash: 4.17.21
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-error-boundary: 3.1.4(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - typescript
-
-  '@teambit/react.ui.docs.properties-table@0.0.12(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
+  '@teambit/react.ui.docs.properties-table@0.0.12(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@teambit/component.ui.hooks.use-fetch-docs': 0.0.16(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/documenter.ui.linked-heading': 4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.property-table': 4.1.3(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/documenter.ui.property-table': 4.1.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       '@teambit/documenter.ui.section': 4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
@@ -17862,56 +15938,11 @@ snapshots:
       - graphql
       - typescript
 
-  '@teambit/react.ui.docs.properties-table@0.0.12(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/component.ui.hooks.use-fetch-docs': 0.0.16(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.linked-heading': 4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.property-table': 4.1.3(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
-      '@teambit/documenter.ui.section': 4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-      - encoding
-      - graphql
-      - typescript
-
-  '@teambit/react.ui.docs.properties-table@0.0.24(@types/react@17.0.80)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/react.ui.docs.properties-table@0.0.24(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
     dependencies:
       '@teambit/component.ui.hooks.use-fetch-docs': 0.0.21(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/documenter.ui.linked-heading': 4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.property-table': 4.1.10(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.section': 4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-      - encoding
-      - graphql
-      - typescript
-
-  '@teambit/react.ui.docs.properties-table@0.0.24(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/component.ui.hooks.use-fetch-docs': 0.0.21(encoding@0.1.13)(graphql@14.7.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.linked-heading': 4.1.6(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/documenter.ui.property-table': 4.1.10(@types/react@18.3.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.1.3)
-      '@teambit/documenter.ui.section': 4.1.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - encoding
-      - graphql
-      - typescript
-
-  '@teambit/react.ui.docs.properties-table@0.0.24(@types/react@18.3.3)(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)':
-    dependencies:
-      '@teambit/component.ui.hooks.use-fetch-docs': 0.0.21(encoding@0.1.13)(graphql@14.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.linked-heading': 4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/documenter.ui.property-table': 4.1.10(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
+      '@teambit/documenter.ui.property-table': 4.1.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.1.3)
       '@teambit/documenter.ui.section': 4.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
       react: 18.3.1
@@ -17932,16 +15963,6 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-error-boundary: 3.1.4(react@18.3.1)
 
-  '@teambit/react.ui.error-fallback@0.0.125(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.styles.flex-center': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/design.ui.icon-button': 1.0.16(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.2.6
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-error-boundary: 3.1.4(react@17.0.2)
-
   '@teambit/react.ui.error-fallback@0.0.125(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/base-ui.styles.flex-center': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -17951,16 +15972,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-error-boundary: 3.1.4(react@18.3.1)
-
-  '@teambit/react.ui.error-fallback@0.0.130(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@teambit/base-ui.styles.flex-center': 1.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@teambit/design.ui.icon-button': 1.0.16(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classnames: 2.2.6
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-error-boundary: 3.1.4(react@17.0.2)
 
   '@teambit/react.ui.error-fallback@0.0.130(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -17972,20 +15983,9 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-error-boundary: 3.1.4(react@18.3.1)
 
-  '@teambit/react.ui.highlighter-provider@0.0.211(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/react.ui.highlighter-provider@0.0.211(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@teambit/react.ui.component-highlighter': 0.2.1(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      classnames: 2.2.6
-      core-js: 3.37.1
-      query-string: 7.0.0
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-
-  '@teambit/react.ui.highlighter-provider@0.0.211(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/react.ui.component-highlighter': 0.2.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/react.ui.component-highlighter': 0.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classnames: 2.2.6
       core-js: 3.37.1
       query-string: 7.0.0
@@ -18005,12 +16005,6 @@ snapshots:
       core-js: 3.37.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@teambit/react.ui.highlighter.component-metadata.bit-component-meta@0.0.41(react-dom@18.2.0(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      core-js: 3.37.1
-      react: 17.0.2
-      react-dom: 18.2.0(react@17.0.2)
 
   '@teambit/react.ui.highlighter.component-metadata.bit-component-meta@0.0.41(react-dom@18.2.0(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -18154,140 +16148,6 @@ snapshots:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  '@teambit/react.webpack.react-webpack@1.0.26(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
-    dependencies:
-      '@babel/preset-env': 7.22.15(@babel/core@7.24.6)
-      '@babel/preset-react': 7.22.15(@babel/core@7.24.6)
-      '@bitdev/react.webpack.refresh-overlay': 0.0.1
-      '@parcel/css': 1.14.0
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.15(@types/webpack@5.28.5)(react-refresh@0.14.0)(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))(webpack@5.91.0(esbuild@0.14.29))
-      '@svgr/webpack': 8.1.0(typescript@5.1.3)
-      '@swc/css': 0.0.20
-      '@teambit/component-id': 1.0.0
-      '@teambit/mdx.modules.mdx-loader': 1.0.14(@babel/core@7.24.6)(esbuild@0.14.29)
-      '@teambit/react.babel.bit-react-transformer': 1.0.22(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
-      '@teambit/webpack.modules.generate-style-loaders': 1.0.0
-      '@teambit/webpack.modules.style-regexps': 1.0.4
-      '@teambit/webpack.webpack-dev-server': 1.0.8(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(eslint@7.32.0)(lightningcss@1.25.1)(typescript@5.1.3)(webpack@5.91.0(esbuild@0.14.29))
-      babel-loader: 9.1.0(@babel/core@7.24.6)(webpack@5.91.0(esbuild@0.14.29))
-      babel-preset-react-app: 10.0.1
-      browserslist: 4.21.4
-      css-loader: 6.7.2(webpack@5.91.0(esbuild@0.14.29))
-      css-minimizer-webpack-plugin: 6.0.0(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(lightningcss@1.25.1)(webpack@5.91.0(esbuild@0.14.29))
-      esbuild: 0.14.29
-      less-loader: 11.1.0(webpack@5.91.0(esbuild@0.14.29))
-      lightningcss: 1.25.1
-      lodash: 4.17.21
-      mini-css-extract-plugin: 2.9.0(webpack@5.91.0(esbuild@0.14.29))
-      new-url-loader: 0.1.1(webpack@5.91.0(esbuild@0.14.29))
-      postcss: 8.4.19
-      postcss-flexbugs-fixes: 5.0.2(postcss@8.4.19)
-      postcss-loader: 7.0.1(postcss@8.4.19)(webpack@5.91.0(esbuild@0.14.29))
-      postcss-normalize: 10.0.1(browserslist@4.21.4)(postcss@8.4.19)
-      postcss-preset-env: 7.8.3(postcss@8.4.19)
-      react-dev-utils: 12.0.1(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0(esbuild@0.14.29))
-      react-dom: 18.2.0(react@18.3.1)
-      react-refresh: 0.14.0
-      resolve-url-loader: 5.0.0
-      sass: 1.63.6
-      sass-loader: 13.3.2(sass@1.63.6)(webpack@5.91.0(esbuild@0.14.29))
-      source-map-loader: 4.0.1(webpack@5.91.0(esbuild@0.14.29))
-      style-loader: 3.3.1(webpack@5.91.0(esbuild@0.14.29))
-      terser-webpack-plugin: 5.2.0(esbuild@0.14.29)(webpack@5.91.0(esbuild@0.14.29))
-      webpack: 5.91.0(esbuild@0.14.29)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@swc/core'
-      - '@types/webpack'
-      - bufferutil
-      - clean-css
-      - csso
-      - debug
-      - eslint
-      - fibers
-      - less
-      - node-sass
-      - react
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-dev-server
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@teambit/react.webpack.react-webpack@1.0.29(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react@17.0.2)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
-    dependencies:
-      '@babel/preset-env': 7.22.15(@babel/core@7.24.6)
-      '@babel/preset-react': 7.22.15(@babel/core@7.24.6)
-      '@bitdev/react.webpack.refresh-overlay': 0.0.1
-      '@parcel/css': 1.14.0
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.15(@types/webpack@5.28.5)(react-refresh@0.14.0)(type-fest@0.21.3)(webpack-dev-server@4.15.0(webpack@5.91.0))(webpack@5.91.0(esbuild@0.14.29))
-      '@svgr/webpack': 8.1.0(typescript@5.1.3)
-      '@swc/css': 0.0.20
-      '@teambit/component-id': 1.2.0
-      '@teambit/mdx.modules.mdx-loader': 1.0.14(@babel/core@7.24.6)(esbuild@0.14.29)
-      '@teambit/react.babel.bit-react-transformer': 1.0.23(react-dom@18.2.0(react@17.0.2))(react@17.0.2)
-      '@teambit/webpack.modules.generate-style-loaders': 1.0.11
-      '@teambit/webpack.modules.style-regexps': 1.0.6
-      '@teambit/webpack.webpack-dev-server': 1.0.10(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(eslint@7.32.0)(lightningcss@1.25.1)(typescript@5.1.3)(webpack@5.91.0(esbuild@0.14.29))
-      babel-loader: 9.1.0(@babel/core@7.24.6)(webpack@5.91.0(esbuild@0.14.29))
-      babel-preset-react-app: 10.0.1
-      browserslist: 4.21.4
-      css-loader: 6.7.2(webpack@5.91.0(esbuild@0.14.29))
-      css-minimizer-webpack-plugin: 6.0.0(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(lightningcss@1.25.1)(webpack@5.91.0(esbuild@0.14.29))
-      esbuild: 0.14.29
-      less-loader: 11.1.0(webpack@5.91.0(esbuild@0.14.29))
-      lightningcss: 1.25.1
-      lodash: 4.17.21
-      mini-css-extract-plugin: 2.9.0(webpack@5.91.0(esbuild@0.14.29))
-      new-url-loader: 0.1.1(webpack@5.91.0(esbuild@0.14.29))
-      postcss: 8.4.19
-      postcss-flexbugs-fixes: 5.0.2(postcss@8.4.19)
-      postcss-loader: 7.0.1(postcss@8.4.19)(webpack@5.91.0(esbuild@0.14.29))
-      postcss-normalize: 10.0.1(browserslist@4.21.4)(postcss@8.4.19)
-      postcss-preset-env: 7.8.3(postcss@8.4.19)
-      react-dev-utils: 12.0.1(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0(esbuild@0.14.29))
-      react-dom: 18.2.0(react@17.0.2)
-      react-refresh: 0.14.0
-      resolve-url-loader: 5.0.0
-      sass: 1.63.6
-      sass-loader: 13.3.2(sass@1.63.6)(webpack@5.91.0(esbuild@0.14.29))
-      source-map-loader: 4.0.1(webpack@5.91.0(esbuild@0.14.29))
-      style-loader: 3.3.1(webpack@5.91.0(esbuild@0.14.29))
-      terser-webpack-plugin: 5.2.0(esbuild@0.14.29)(webpack@5.91.0(esbuild@0.14.29))
-      webpack: 5.91.0(esbuild@0.14.29)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@swc/core'
-      - '@types/webpack'
-      - bufferutil
-      - clean-css
-      - csso
-      - debug
-      - eslint
-      - fibers
-      - less
-      - node-sass
-      - react
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-dev-server
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
   '@teambit/react.webpack.react-webpack@1.0.29(@babel/core@7.24.6)(@types/webpack@5.28.5)(eslint@7.32.0)(react@18.3.1)(type-fest@0.21.3)(typescript@5.1.3)(webpack-dev-server@4.15.0(webpack@5.91.0))':
     dependencies:
       '@babel/preset-env': 7.22.15(@babel/core@7.24.6)
@@ -18388,25 +16248,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@teambit/ui-foundation.ui.pages.static-error@0.0.87(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@teambit/ui-foundation.ui.pages.static-error@0.0.87(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@teambit/base-ui.theme.fonts.book': 1.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/design.ui.pages.not-found': 0.0.366(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/design.ui.pages.server-error': 0.0.366(@types/react@17.0.80)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/ui-foundation.ui.pages.preview-not-found': 0.0.79(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/ui-foundation.ui.rendering.html': 0.0.80(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      core-js: 3.37.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@testing-library/react'
-      - '@types/react'
-
-  '@teambit/ui-foundation.ui.pages.static-error@0.0.87(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@teambit/base-ui.theme.fonts.book': 1.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/design.ui.pages.not-found': 0.0.366(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@teambit/design.ui.pages.server-error': 0.0.366(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/design.ui.pages.not-found': 0.0.366(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/design.ui.pages.server-error': 0.0.366(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/ui-foundation.ui.pages.preview-not-found': 0.0.79(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@teambit/ui-foundation.ui.rendering.html': 0.0.80(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       core-js: 3.37.1
@@ -18430,13 +16276,9 @@ snapshots:
 
   '@teambit/webpack.modules.generate-style-loaders@0.0.110': {}
 
-  '@teambit/webpack.modules.generate-style-loaders@1.0.0': {}
-
   '@teambit/webpack.modules.generate-style-loaders@1.0.11': {}
 
   '@teambit/webpack.modules.style-regexps@0.0.139': {}
-
-  '@teambit/webpack.modules.style-regexps@1.0.4': {}
 
   '@teambit/webpack.modules.style-regexps@1.0.6': {}
 
@@ -18517,88 +16359,6 @@ snapshots:
       - clean-css
       - csso
       - esbuild
-      - uglify-js
-      - webpack-cli
-
-  '@teambit/webpack.webpack-bundler@1.0.7':
-    dependencies:
-      '@teambit/bit-error': 0.0.402
-      assert: 2.0.0
-      browserify-zlib: 0.2.0
-      buffer: 6.0.3
-      compression-webpack-plugin: 10.0.0(webpack@5.91.0)
-      constants-browserify: 1.0.0
-      crypto-browserify: 3.12.0
-      css-loader: 6.7.1(webpack@5.91.0)
-      css-minimizer-webpack-plugin: 5.0.1(webpack@5.91.0)
-      domain-browser: 4.19.0
-      html-webpack-plugin: 5.5.0(webpack@5.91.0)
-      https-browserify: 1.0.0
-      lodash: 4.17.21
-      os-browserify: 0.3.0
-      p-map-series: 2.1.0
-      path-browserify: 1.0.1
-      process: 0.11.10
-      punycode: 2.1.1
-      querystring-es3: 0.2.1
-      stream-browserify: 3.0.0
-      stream-http: 3.2.0
-      string_decoder: 1.3.0
-      timers-browserify: 2.0.12
-      tty-browserify: 0.0.1
-      url: 0.11.2
-      util: 0.12.3
-      vm-browserify: 1.1.2
-      webpack: 5.91.0
-    transitivePeerDependencies:
-      - '@parcel/css'
-      - '@swc/core'
-      - '@swc/css'
-      - clean-css
-      - csso
-      - esbuild
-      - lightningcss
-      - uglify-js
-      - webpack-cli
-
-  '@teambit/webpack.webpack-bundler@1.0.7(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(lightningcss@1.25.1)':
-    dependencies:
-      '@teambit/bit-error': 0.0.402
-      assert: 2.0.0
-      browserify-zlib: 0.2.0
-      buffer: 6.0.3
-      compression-webpack-plugin: 10.0.0(webpack@5.91.0(esbuild@0.14.29))
-      constants-browserify: 1.0.0
-      crypto-browserify: 3.12.0
-      css-loader: 6.7.1(webpack@5.91.0(esbuild@0.14.29))
-      css-minimizer-webpack-plugin: 5.0.1(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(lightningcss@1.25.1)(webpack@5.91.0(esbuild@0.14.29))
-      domain-browser: 4.19.0
-      html-webpack-plugin: 5.5.0(webpack@5.91.0(esbuild@0.14.29))
-      https-browserify: 1.0.0
-      lodash: 4.17.21
-      os-browserify: 0.3.0
-      p-map-series: 2.1.0
-      path-browserify: 1.0.1
-      process: 0.11.10
-      punycode: 2.1.1
-      querystring-es3: 0.2.1
-      stream-browserify: 3.0.0
-      stream-http: 3.2.0
-      string_decoder: 1.3.0
-      timers-browserify: 2.0.12
-      tty-browserify: 0.0.1
-      url: 0.11.2
-      util: 0.12.3
-      vm-browserify: 1.1.2
-      webpack: 5.91.0(esbuild@0.14.29)
-    transitivePeerDependencies:
-      - '@parcel/css'
-      - '@swc/core'
-      - '@swc/css'
-      - clean-css
-      - csso
-      - esbuild
-      - lightningcss
       - uglify-js
       - webpack-cli
 
@@ -18786,60 +16546,6 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@teambit/webpack.webpack-dev-server@1.0.8(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(eslint@7.32.0)(lightningcss@1.25.1)(typescript@5.1.3)(webpack@5.91.0(esbuild@0.14.29))':
-    dependencies:
-      '@teambit/webpack.webpack-bundler': 1.0.7(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(lightningcss@1.25.1)
-      find-root: 1.1.0
-      html-webpack-plugin: 5.5.0(webpack@5.91.0(esbuild@0.14.29))
-      object-hash: 3.0.0
-      react-dev-utils: 12.0.1(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0(esbuild@0.14.29))
-      webpack: 5.91.0(esbuild@0.14.29)
-      webpack-dev-server: 4.15.0(webpack@5.91.0(esbuild@0.14.29))
-    transitivePeerDependencies:
-      - '@parcel/css'
-      - '@swc/core'
-      - '@swc/css'
-      - bufferutil
-      - clean-css
-      - csso
-      - debug
-      - esbuild
-      - eslint
-      - lightningcss
-      - supports-color
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-
-  '@teambit/webpack.webpack-dev-server@1.0.8(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0)':
-    dependencies:
-      '@teambit/webpack.webpack-bundler': 1.0.7
-      find-root: 1.1.0
-      html-webpack-plugin: 5.5.0(webpack@5.91.0)
-      object-hash: 3.0.0
-      react-dev-utils: 12.0.1(eslint@7.32.0)(typescript@5.1.3)(webpack@5.91.0)
-      webpack: 5.91.0
-      webpack-dev-server: 4.15.0(webpack@5.91.0)
-    transitivePeerDependencies:
-      - '@parcel/css'
-      - '@swc/core'
-      - '@swc/css'
-      - bufferutil
-      - clean-css
-      - csso
-      - debug
-      - esbuild
-      - eslint
-      - lightningcss
-      - supports-color
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-
   '@testing-library/jest-dom@5.16.5':
     dependencies:
       '@adobe/css-tools': 4.4.0
@@ -18895,11 +16601,11 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
 
   '@types/bonjour@3.5.13':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
 
   '@types/cacheable-request@6.0.3':
     dependencies:
@@ -18911,11 +16617,11 @@ snapshots:
   '@types/connect-history-api-fallback@1.5.4':
     dependencies:
       '@types/express-serve-static-core': 4.19.3
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
 
   '@types/eslint-scope@3.7.7':
     dependencies:
@@ -18933,7 +16639,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.3':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
       '@types/qs': 6.9.15
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -18963,7 +16669,7 @@ snapshots:
 
   '@types/http-proxy@1.17.14':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
 
   '@types/istanbul-lib-coverage@2.0.6': {}
 
@@ -19011,9 +16717,11 @@ snapshots:
 
   '@types/node-forge@1.3.11':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
 
   '@types/node@12.20.4': {}
+
+  '@types/node@16.18.98': {}
 
   '@types/node@20.14.2':
     dependencies:
@@ -19023,30 +16731,9 @@ snapshots:
 
   '@types/parse5@5.0.3': {}
 
-  '@types/prop-types@15.7.12': {}
-
   '@types/qs@6.9.15': {}
 
   '@types/range-parser@1.2.7': {}
-
-  '@types/react-dom@17.0.25':
-    dependencies:
-      '@types/react': 17.0.80
-
-  '@types/react-dom@18.3.0':
-    dependencies:
-      '@types/react': 18.3.3
-
-  '@types/react@17.0.80':
-    dependencies:
-      '@types/prop-types': 15.7.12
-      '@types/scheduler': 0.16.8
-      csstype: 3.1.3
-
-  '@types/react@18.3.3':
-    dependencies:
-      '@types/prop-types': 15.7.12
-      csstype: 3.1.3
 
   '@types/responselike@1.0.3':
     dependencies:
@@ -19054,14 +16741,12 @@ snapshots:
 
   '@types/retry@0.12.0': {}
 
-  '@types/scheduler@0.16.8': {}
-
   '@types/semver@7.5.8': {}
 
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
 
   '@types/serve-index@1.9.4':
     dependencies:
@@ -19070,12 +16755,12 @@ snapshots:
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
       '@types/send': 0.17.4
 
   '@types/sockjs@0.3.36':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
 
   '@types/stack-utils@2.0.3': {}
 
@@ -19091,7 +16776,7 @@ snapshots:
 
   '@types/webpack@5.28.5':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
       tapable: 2.2.1
       webpack: 5.91.0
     transitivePeerDependencies:
@@ -19102,7 +16787,7 @@ snapshots:
 
   '@types/ws@8.5.10':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
 
   '@types/yargs-parser@21.0.3': {}
 
@@ -20394,21 +18079,6 @@ snapshots:
       safe-buffer: 5.2.1
       sha.js: 2.4.11
 
-  create-jest@29.7.0(@types/node@12.20.4)(babel-plugin-macros@3.1.0):
-    dependencies:
-      '@jest/types': 29.6.3
-      chalk: 4.1.2
-      exit: 0.1.2
-      graceful-fs: 4.2.11
-      jest-config: 29.7.0(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-      jest-util: 29.7.0
-      prompts: 2.4.2
-    transitivePeerDependencies:
-      - '@types/node'
-      - babel-plugin-macros
-      - supports-color
-      - ts-node
-
   create-jest@29.7.0(@types/node@20.14.2)(babel-plugin-macros@3.1.0):
     dependencies:
       '@jest/types': 29.6.3
@@ -20752,8 +18422,6 @@ snapshots:
   cssstyle@4.0.1:
     dependencies:
       rrweb-cssom: 0.6.0
-
-  csstype@3.1.3: {}
 
   d@1.0.2:
     dependencies:
@@ -22540,25 +20208,6 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  jest-cli@29.7.0(@types/node@12.20.4)(babel-plugin-macros@3.1.0):
-    dependencies:
-      '@jest/core': 29.7.0(babel-plugin-macros@3.1.0)
-      '@jest/test-result': 29.7.0
-      '@jest/types': 29.6.3
-      chalk: 4.1.2
-      create-jest: 29.7.0(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-      exit: 0.1.2
-      import-local: 3.1.0
-      jest-config: 29.7.0(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-      jest-util: 29.7.0
-      jest-validate: 29.7.0
-      yargs: 17.7.2
-    transitivePeerDependencies:
-      - '@types/node'
-      - babel-plugin-macros
-      - supports-color
-      - ts-node
-
   jest-cli@29.7.0(@types/node@20.14.2)(babel-plugin-macros@3.1.0):
     dependencies:
       '@jest/core': 29.7.0(babel-plugin-macros@3.1.0)
@@ -22577,36 +20226,6 @@ snapshots:
       - babel-plugin-macros
       - supports-color
       - ts-node
-
-  jest-config@29.7.0(@types/node@12.20.4)(babel-plugin-macros@3.1.0):
-    dependencies:
-      '@babel/core': 7.24.6
-      '@jest/test-sequencer': 29.7.0
-      '@jest/types': 29.6.3
-      babel-jest: 29.7.0(@babel/core@7.24.6)
-      chalk: 4.1.2
-      ci-info: 3.9.0
-      deepmerge: 4.3.1
-      glob: 7.2.3
-      graceful-fs: 4.2.11
-      jest-circus: 29.7.0(babel-plugin-macros@3.1.0)
-      jest-environment-node: 29.7.0
-      jest-get-type: 29.6.3
-      jest-regex-util: 29.6.3
-      jest-resolve: 29.7.0
-      jest-runner: 29.7.0
-      jest-util: 29.7.0
-      jest-validate: 29.7.0
-      micromatch: 4.0.7
-      parse-json: 5.2.0
-      pretty-format: 29.7.0
-      slash: 3.0.0
-      strip-json-comments: 3.1.1
-    optionalDependencies:
-      '@types/node': 12.20.4
-    transitivePeerDependencies:
-      - babel-plugin-macros
-      - supports-color
 
   jest-config@29.7.0(@types/node@20.14.2)(babel-plugin-macros@3.1.0):
     dependencies:
@@ -22884,28 +20503,16 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
   jest-worker@29.7.0:
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 16.18.98
       jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
-
-  jest@29.3.1(@types/node@12.20.4)(babel-plugin-macros@3.1.0):
-    dependencies:
-      '@jest/core': 29.7.0(babel-plugin-macros@3.1.0)
-      '@jest/types': 29.6.3
-      import-local: 3.1.0
-      jest-cli: 29.7.0(@types/node@12.20.4)(babel-plugin-macros@3.1.0)
-    transitivePeerDependencies:
-      - '@types/node'
-      - babel-plugin-macros
-      - supports-color
-      - ts-node
 
   jest@29.3.1(@types/node@20.14.2)(babel-plugin-macros@3.1.0):
     dependencies:
@@ -24409,10 +22016,6 @@ snapshots:
       ansi-styles: 5.2.0
       react-is: 18.3.1
 
-  prism-react-renderer@1.3.5(react@17.0.2):
-    dependencies:
-      react: 17.0.2
-
   prism-react-renderer@1.3.5(react@18.3.1):
     dependencies:
       react: 18.3.1
@@ -24718,19 +22321,6 @@ snapshots:
       - supports-color
       - vue-template-compiler
 
-  react-dom@17.0.2(react@17.0.2):
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-      react: 17.0.2
-      scheduler: 0.20.2
-
-  react-dom@18.2.0(react@17.0.2):
-    dependencies:
-      loose-envify: 1.4.0
-      react: 17.0.2
-      scheduler: 0.23.2
-
   react-dom@18.2.0(react@18.3.1):
     dependencies:
       loose-envify: 1.4.0
@@ -24742,11 +22332,6 @@ snapshots:
       loose-envify: 1.4.0
       react: 18.3.1
       scheduler: 0.23.2
-
-  react-error-boundary@3.1.4(react@17.0.2):
-    dependencies:
-      '@babel/runtime': 7.20.0
-      react: 17.0.2
 
   react-error-boundary@3.1.4(react@18.3.1):
     dependencies:
@@ -24761,14 +22346,6 @@ snapshots:
 
   react-is@18.3.1: {}
 
-  react-live@3.2.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
-    dependencies:
-      prism-react-renderer: 1.3.5(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      sucrase: 3.35.0
-      use-editable: 2.3.3(react@17.0.2)
-
   react-live@3.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       prism-react-renderer: 1.3.5(react@18.3.1)
@@ -24779,15 +22356,6 @@ snapshots:
 
   react-refresh@0.14.0: {}
 
-  react-syntax-highlighter@13.5.3(react@17.0.2):
-    dependencies:
-      '@babel/runtime': 7.20.0
-      highlight.js: 10.7.3
-      lowlight: 1.20.0
-      prismjs: 1.29.0
-      react: 17.0.2
-      refractor: 3.6.0
-
   react-syntax-highlighter@13.5.3(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.20.0
@@ -24795,15 +22363,6 @@ snapshots:
       lowlight: 1.20.0
       prismjs: 1.29.0
       react: 18.3.1
-      refractor: 3.6.0
-
-  react-syntax-highlighter@15.4.3(react@17.0.2):
-    dependencies:
-      '@babel/runtime': 7.20.0
-      highlight.js: 10.7.3
-      lowlight: 1.20.0
-      prismjs: 1.29.0
-      react: 17.0.2
       refractor: 3.6.0
 
   react-syntax-highlighter@15.4.3(react@18.3.1):
@@ -24815,21 +22374,8 @@ snapshots:
       react: 18.3.1
       refractor: 3.6.0
 
-  react-use-dimensions@1.2.1(@types/react@17.0.80)(react@18.3.1)(typescript@5.1.3):
+  react-use-dimensions@1.2.1(react@18.3.1)(typescript@5.1.3):
     dependencies:
-      '@types/react': 17.0.80
-      react: 18.3.1
-      typescript: 5.1.3
-
-  react-use-dimensions@1.2.1(@types/react@18.3.3)(react@17.0.2)(typescript@5.1.3):
-    dependencies:
-      '@types/react': 18.3.3
-      react: 17.0.2
-      typescript: 5.1.3
-
-  react-use-dimensions@1.2.1(@types/react@18.3.3)(react@18.3.1)(typescript@5.1.3):
-    dependencies:
-      '@types/react': 18.3.3
       react: 18.3.1
       typescript: 5.1.3
 
@@ -24837,11 +22383,6 @@ snapshots:
     dependencies:
       envify: 3.4.1
       fbjs: 0.6.1
-
-  react@17.0.2:
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
 
   react@18.2.0:
     dependencies:
@@ -25146,11 +22687,6 @@ snapshots:
   saxes@6.0.0:
     dependencies:
       xmlchars: 2.2.0
-
-  scheduler@0.20.2:
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
 
   scheduler@0.23.2:
     dependencies:
@@ -26000,10 +23536,6 @@ snapshots:
       punycode: 1.4.1
       qs: 6.12.1
 
-  use-debounce@3.4.3(react@17.0.2):
-    dependencies:
-      react: 17.0.2
-
   use-debounce@3.4.3(react@18.3.1):
     dependencies:
       react: 18.3.1
@@ -26012,43 +23544,22 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  use-debounce@9.0.4(react@17.0.2):
-    dependencies:
-      react: 17.0.2
-
   use-debounce@9.0.4(react@18.3.1):
     dependencies:
       react: 18.3.1
-
-  use-deep-compare@1.2.1(react@17.0.2):
-    dependencies:
-      dequal: 2.0.3
-      react: 17.0.2
 
   use-deep-compare@1.2.1(react@18.3.1):
     dependencies:
       dequal: 2.0.3
       react: 18.3.1
 
-  use-editable@2.3.3(react@17.0.2):
-    dependencies:
-      react: 17.0.2
-
   use-editable@2.3.3(react@18.3.1):
     dependencies:
       react: 18.3.1
 
-  use-isomorphic-layout-effect@1.1.2(@types/react@17.0.80)(react@18.3.1):
+  use-isomorphic-layout-effect@1.1.2(react@18.3.1):
     dependencies:
       react: 18.3.1
-    optionalDependencies:
-      '@types/react': 17.0.80
-
-  use-isomorphic-layout-effect@1.1.2(@types/react@18.3.3)(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-    optionalDependencies:
-      '@types/react': 18.3.3
 
   util-deprecate@1.0.2: {}
 

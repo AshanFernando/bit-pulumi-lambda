@@ -59,6 +59,8 @@
         "@aws-sdk/lib-dynamodb": "^3.590.0",
         "@bitpulumi/awsx.lambda": "^0.0.8",
         "@bitpulumi/development.app-types.pulumi": "^0.0.8",
+        "@bitpulumi/development.envs.lambda-env": "^0.0.19",
+        "@bitpulumi/development.envs.preview.react-preview": "^0.0.1",
         "@pulumi/aws": "^5.41.0",
         "@pulumi/aws-apigateway": "^1.0.1",
         "@pulumi/pulumi": "^3.116.1",

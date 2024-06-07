@@ -30,20 +30,6 @@
         "mainFile": "index.ts",
         "rootDir": "demo/dynamodb/count-table"
     },
-    "envs/lambda-env": {
-        "name": "envs/lambda-env",
-        "scope": "bitpulumi.development",
-        "version": "0.0.19",
-        "mainFile": "index.ts",
-        "rootDir": "development/envs/lambda-env"
-    },
-    "envs/preview/react-preview": {
-        "name": "envs/preview/react-preview",
-        "scope": "bitpulumi.development",
-        "version": "0.0.1",
-        "mainFile": "index.ts",
-        "rootDir": "demo/react-preview"
-    },
     "lambdas/count-lambda": {
         "name": "lambdas/count-lambda",
         "scope": "bit-pulumi-lambda.demo",
