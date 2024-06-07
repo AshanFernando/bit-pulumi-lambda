@@ -11,7 +11,7 @@ import {
 import fs from "fs";
 import { Pipeline } from "@teambit/builder";
 import type { Preview } from '@teambit/preview';
-import { ReactPreview } from '@teambit/preview.react-preview';
+import { ReactPreview } from '@bit-pulumi-lambda/demo.react-preview';
 
 export class LambdaEnv extends NodeEnv {
   /* shorthand name for the environment */
@@ -45,6 +45,29 @@ export class LambdaEnv extends NodeEnv {
     return Pipeline.from([
       EsbuildTask.from(esbuildOptions, esbuildOptions)
     ]);
+  }
+
+  preview(): EnvHandler<Preview> {
+        return ReactPreview.from({
+      /**
+       * override the default docs template for components.
+       */
+      // docsTemplate: require.resolve('./preview/docs'),
+      /**
+       * mounters are used to mount components to DOM
+       * during preview. use them for wrapping your components
+       * with routing, theming, data fetching or other types
+       * of providers.
+       */
+      bundler: undefined,
+      previewConfig: {
+        splitComponentBundle: false,
+        strategyName: 'component'
+      },
+      // webpackModulePath: require.resolve("webpack"),
+      // webpackDevServerModulePath: require.resolve("webpack-dev-server")
+      // transformers: [webpackTransformer],
+    });
   }
 }
 

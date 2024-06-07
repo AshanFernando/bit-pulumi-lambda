@@ -3,8 +3,10 @@
   "bundle": true,
   "platform": "node",
   "target": "node18",
-  "external": ["aws-sdk", "http2"], 
+  "external": [], 
   "outfile": "../dist/index.js",
-  "minify": true,
+  "minifyWhitespace": true,
+  "minifyIdentifiers": false,
+  "minifySyntax": true,
   "sourcemap": false
 }

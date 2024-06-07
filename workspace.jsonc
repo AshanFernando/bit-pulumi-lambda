@@ -62,13 +62,25 @@
         "@pulumi/aws": "^5.41.0",
         "@pulumi/aws-apigateway": "^1.0.1",
         "@pulumi/pulumi": "^3.116.1",
+        "@teambit/docs.docs-template": "^1.0.7",
+        "@teambit/preview.modules.preview-modules": "^1.0.3",
+        "@teambit/react.mounter": "^1.0.6",
+        "@teambit/react.webpack.react-webpack": "^1.0.29",
+        "@teambit/webpack.webpack-bundler": "^1.0.9",
+        "@teambit/webpack.webpack-dev-server": "^1.0.10",
         "@types/aws-lambda": "^8.10.138",
+        "@types/webpack": "^5.28.1",
         "aws-lambda": "^1.0.7",
         "aws-sdk": "^2.1635.0",
         "date-fns": "^3.6.0",
-        "http2": "^3.3.7"
+        "http2": "^3.3.7",
+        "object-hash": "^3.0.0",
+        "webpack": "^5.88.2",
+        "webpack-dev-server": "^4.15.0"
       },
-      "peerDependencies": {}
+      "peerDependencies": {
+        "react": "^18.2.0"
+      }
     },
     "linkCoreAspects": true,
     "rootComponents": true
@@ -76,5 +88,8 @@
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true
   },
+  // "teambit.preview/preview": {
+  //   "disabled": true
+  // },
   "bit-pulumi-lambda.demo/pulumi-app": {}
 }
