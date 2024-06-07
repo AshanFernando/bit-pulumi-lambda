@@ -1,8 +1,13 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
-import AWS from 'aws-sdk';
+import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
+import {
+  DynamoDBDocumentClient,
+  GetCommand,
+  PutCommand,
+} from '@aws-sdk/lib-dynamodb';
 
-AWS.config.update({ region: 'your-region' }); // Specify your region here
-const dynamoDb = new AWS.DynamoDB.DocumentClient();
+const client = new DynamoDBClient({});
+const ddbDocClient = DynamoDBDocumentClient.from(client);
 
 export const handler: APIGatewayProxyHandler = async (event) => {
   const countTable = process.env.COUNT_TABLE;
@@ -12,7 +17,7 @@ export const handler: APIGatewayProxyHandler = async (event) => {
     return {
       statusCode: 500,
       body: JSON.stringify({
-        message: 'COUNT_TABLE environment variable is not set',
+        message: 'COUNT_TABLE environment variable is not set!',
       }),
     };
   }
@@ -20,45 +25,28 @@ export const handler: APIGatewayProxyHandler = async (event) => {
   if (!userIp) {
     return {
       statusCode: 400,
-      body: JSON.stringify({ message: 'User IP address not found' }),
+      body: JSON.stringify({ message: 'User IP address not found!' }),
     };
   }
 
   // Get the current count for the user IP
-  const getParams = {
-    TableName: countTable,
-    Key: { sessionId: userIp },
-  };
+  const getResult = await ddbDocClient.send(
+    new GetCommand({
+      TableName: countTable,
+      Key: { sessionId: userIp },
+    })
+  );
 
-  let count = 0;
-  try {
-    const getResult = await dynamoDb.get(getParams).promise();
-    if (getResult.Item) {
-      count = getResult.Item.count;
-    }
-  } catch (error) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ message: 'Error retrieving count', error }),
-    };
-  }
-
+  let count = getResult.Item ? getResult.Item.count : 0;
   count += 1;
 
   // Update the count in the DynamoDB table
-  const putParams = {
-    TableName: countTable,
-    Item: { sessionId: userIp, count },
-  };
-
-  try {
-    await dynamoDb.put(putParams).promise();
-  } catch (error) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ message: 'Error updating count', error }),
-    };
-  }
+  await ddbDocClient.send(
+    new PutCommand({
+      TableName: countTable,
+      Item: { sessionId: userIp, count },
+    })
+  );
 
   return {
     statusCode: 200,

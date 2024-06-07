@@ -2,8 +2,8 @@
   "entryPoints": ["index.ts"],
   "bundle": true,
   "platform": "node",
-  "target": "node14", 
-  "external": ["aws-sdk"], 
+  "target": "node18",
+  "external": ["aws-sdk", "http2"], 
   "outfile": "../dist/index.js",
   "minify": true,
   "sourcemap": false

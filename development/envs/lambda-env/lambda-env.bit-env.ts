@@ -46,10 +46,6 @@ export class LambdaEnv extends NodeEnv {
       EsbuildTask.from(esbuildOptions, esbuildOptions)
     ]);
   }
-
-  preview(): EnvHandler<Preview> {
-    return ReactPreview.from({ });
-  }
 }
 
 export default new LambdaEnv();
