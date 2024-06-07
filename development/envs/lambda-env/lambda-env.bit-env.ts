@@ -11,7 +11,7 @@ import {
 import fs from "fs";
 import { Pipeline } from "@teambit/builder";
 import type { Preview } from '@teambit/preview';
-import { ReactPreview } from '@bit-pulumi-lambda/demo.react-preview';
+import { ReactPreview } from '@bitpulumi/development.envs.preview.react-preview';
 
 export class LambdaEnv extends NodeEnv {
   /* shorthand name for the environment */

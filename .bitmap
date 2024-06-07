@@ -12,7 +12,7 @@
     "api-gateway": {
         "name": "api-gateway",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.20",
+        "version": "0.0.21",
         "mainFile": "index.ts",
         "rootDir": "demo/api-gateway"
     },
@@ -33,65 +33,65 @@
     "envs/lambda-env": {
         "name": "envs/lambda-env",
         "scope": "bitpulumi.development",
-        "version": "0.0.18",
+        "version": "0.0.19",
         "mainFile": "index.ts",
         "rootDir": "development/envs/lambda-env"
+    },
+    "envs/preview/react-preview": {
+        "name": "envs/preview/react-preview",
+        "scope": "bitpulumi.development",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "demo/react-preview"
     },
     "lambdas/count-lambda": {
         "name": "lambdas/count-lambda",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.16",
+        "version": "0.0.17",
         "mainFile": "index.ts",
         "rootDir": "demo/lambdas/count-lambda"
     },
     "lambdas/date-lambda": {
         "name": "lambdas/date-lambda",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.10",
+        "version": "0.0.11",
         "mainFile": "index.ts",
         "rootDir": "demo/lambdas/date-lambda"
     },
     "lambdas/flights-lambda": {
         "name": "lambdas/flights-lambda",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.10",
+        "version": "0.0.11",
         "mainFile": "index.ts",
         "rootDir": "demo/lambdas/flights-lambda"
     },
     "lambdas/hello-lambda": {
         "name": "lambdas/hello-lambda",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.10",
+        "version": "0.0.11",
         "mainFile": "index.ts",
         "rootDir": "demo/lambdas/hello-lambda"
     },
     "lambdas/random-lambda": {
         "name": "lambdas/random-lambda",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.ts",
         "rootDir": "demo/lambdas/random-lambda"
     },
     "lambdas/success-lambda": {
         "name": "lambdas/success-lambda",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.ts",
         "rootDir": "demo/lambdas/success-lambda"
     },
     "pulumi-app": {
         "name": "pulumi-app",
         "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.20",
+        "version": "0.0.21",
         "mainFile": "index.ts",
         "rootDir": "demo/pulumi-app"
-    },
-    "react-preview": {
-        "name": "react-preview",
-        "scope": "bit-pulumi-lambda.demo",
-        "version": "0.0.1",
-        "mainFile": "index.ts",
-        "rootDir": "demo/react-preview"
     },
     "utils/date-util": {
         "name": "utils/date-util",
